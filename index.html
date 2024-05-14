@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="assets/css/johndoe.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
+    <!--<a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>-->
     <header class="header">
         <div class="container">
             <ul class="social-icons pt-3">
@@ -22,8 +22,34 @@
             <div class="header-content">
                 <h4 class="header-subtitle" >Hello, I am</h4>
                 <h1 class="header-title">Nizar Shehayeb</h1>
-                <h6 class="header-mono" >Full stack Developer | Software Developer</h6>
-                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
+                <h6 class="header-mono" >Mechtronics Engineer | Software Developer</h6>
+                <button class="btn btn-primary btn-rounded" onclick="downloadPDF()">
+                    <i class="ti-printer pr-2"></i>Print Resume
+                </button>
+                
+                <script>
+                function downloadPDF() {
+                    // Replace 'https://NizarSH98.github.io/NizarShehayebResume2.pdf' with the actual full URL to your PDF file
+                    var pdfUrl = 'https://github.com/NizarSH98/resumePDF/blob/main/NizarShehayebResume2.pdf';
+                    
+                    // Create an anchor element
+                    var link = document.createElement('a');
+                    link.href = pdfUrl;
+                    
+                    // Set the download attribute to force download
+                    link.download = 'resume.pdf';
+                    
+                    // Append the anchor element to the body
+                    document.body.appendChild(link);
+                    
+                    // Trigger the click event of the anchor element
+                    link.click();
+                    
+                    // Clean up - remove the anchor element from the DOM
+                    document.body.removeChild(link);
+                }
+                </script>
+                
             </div>
         </div>
     </header>
@@ -47,17 +73,19 @@
                 <ul class="navbar-nav brand">
                     <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
                     <li class="brand-txt">
-                        <h5 class="brand-title">John Doe</h5>
-                        <div class="brand-subtitle">Web Designer | Developer</div>
+                        <h5 class="brand-title">Nizar Shehayeb</h5>
+                        <div class="brand-subtitle">Mechtronics Engineer | Software Developer</div>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
+                    <!--
                     <li class="nav-item">
                         <a href="#portfolio" class="nav-link">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a href="#blog" class="nav-link">Blog</a>
                     </li>
+                -->
                     <li class="nav-item last-item">
                         <a href="#contact" class="nav-link">Contact</a>
                     </li>
@@ -70,8 +98,8 @@
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Who am I ?</h3>
                 <span class="line mb-5"></span>
-                <h5 class="mb-3">A Web Designer / Developer Located In Our Lovely Earth</h5>
-                <p class="mt-20">Hello! I’m Nizar Shehayeb, a Software Developer with 5 years of experience specializing in Robotics, Web Design, AI, and ML.
+                <h5 class="mb-3">A Mechtronics Engineer / Software Developer Located In Our Lovely Earth</h5>
+                <p class="mt-20">Hello! I’m Nizar Shehayeb, a Mechtronics Engineer with 7 years of experience specializing in Robotics, Web Design, AI, and ML.
                      My passion for cutting-edge technology drives me to create and integrate robust and comprehensive projects. My dedication to excellence has 
                      been recognized by my mentors and colleagues alike. I invite you to dive into my portfolio to explore the innovative solutions I’ve developed and the
                       stories I’ve brought to life through my work. Let’s collaborate to create something truly unforgettable.</p>
@@ -87,8 +115,8 @@
                     <li><span>Address</span> :  1501 Aley,Lebanon.</li>
                 </ul>
                 <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="mailto:jabernizar98@gmail.com"><i class="ti-google" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/NizarSH98/NizarSH98"><i class="ti-github" aria-hidden="true"></i></a></li>
                 </ul>  
             </div>
             <div class="col-lg-4 about-card">
@@ -97,16 +125,16 @@
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>UX Design</h6>
-                        <p class="subtitle"> exercitat Repellendus,  corrupt.</p>
+                        <h6>Machine Learning</h6>
+                        <p class="subtitle"> tensorflow, pytorch, Computer Vision</p>
                         <hr>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
+                    <div class="col-1 text-danger pt-1"><i class="ti-cloud icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
                         <h6>Web Development</h6>
-                        <p class="subtitle">Lorem ipsum dolor sit consectetur.</p>
+                        <p class="subtitle">Angular, React, PHP</p>
                         <hr>
                     </div>
                 </div>
@@ -114,7 +142,15 @@
                     <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
                         <h6>Software Development</h6>
-                        <p class="subtitle">voluptate commodi illo voluptatib.</p>
+                        <p class="subtitle">Python, C#, C++></C>.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-pulse icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Embeded systems</h6>
+                        <p class="subtitle">RasberryPi, ESP32, Arduino.</p>
                         <hr>
                     </div>
                 </div>
@@ -136,17 +172,27 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h6 class="title text-danger">2017 - Present</h6>
-                            <P>UX Developer</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
+                            <h6 class="title text-danger">2024 - Present</h6>
+                            <P>Head of IT</P>
+                            <P class="subtitle">During my time at TomVR, a prominent VR and AR entertainment firm, I effectively managed and repaired numerous intricate system machines with precision 
+                                                and efficiency. Not only did I demonstrate proficiency in diagnosing and resolving technical issues swiftly, but I also showcased strong organizational skills, ensuring seamless 
+                                                operations of the complex machinery. My ability to adapt to evolving technologies and collaborate effectively within a team further enhanced the overall productivity and success of 
+                                                the projects undertaken at TomVR.
+                                            </P>
                             <hr>
-                            <h6 class="title text-danger">2016 - 2017</h6>
-                            <P>Front-end Developer</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
+                            <h6 class="title text-danger">2023 - 2024</h6>
+                            <P>Coding instructor (remote)</P>
+                            <P class="subtitle">Developed and implemented a multilingual curriculum, enhancing programming understanding among students by 30%.
+                                Introduced hands-on coding projects and practical examples, boosting student engagement and retention by 25%.
+                                Played a key role in a team that developed an online learning platform, successfully educating over 1,000 students with an 85% completion rate.
+                                </P>
                             <hr>
-                            <h6 class="title text-danger">2015 - 2016</h6>
-                            <P>UX Designer</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
+                            <h6 class="title text-danger">2021 - 2023</h6>
+                            <P>Electronics Technician</P>
+                            <P class="subtitle">Diagnosed and repaired a variety of digital devices, maintaining a 95% success rate in restorations under tight deadlines.
+                                Enhanced system efficiency by 20% through improved troubleshooting techniques.
+                                Collaborated on the development and implementation of preventive maintenance strategies, reducing system failures by 25%.
+                                </P>
                         </div>
                     </div>
                 </div>
@@ -159,17 +205,26 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h6 class="title text-danger">2017 - Present</h6>
-                            <P>B.E Computer Engineering</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corrupti recusandae obcaecati odit repellat ducimus cum, minus tempora aperiam at.</P>
+                            <h6 class="title text-danger">2021 - 2024</h6>
+                            <P>Bachelor in Technology Mechtronics Engineering</P>
+                            <P class="subtitle">I obtained this degree after a considerable amount of hard work and continuous improvement. Throughout these years, I underwent vigorous hands-on 
+                                training in multiple technologies to the extent that my grades were determined by projects rather than exams. Concurrently, I maintained employment during my time at 
+                                university, consistently applying my knowledge from both academia and work, which significantly elevated my proficiency compared to my peers.
+                            </P>
                             <hr>
-                            <h6 class="title text-danger">2016 - 2017</h6>
-                            <P>Diploma in Computer Engineering</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, id officiis quas placeat quia voluptas dolorum rem animi nostrum quae.aliquid repudiandae saepe!.</P>
+                            <h6 class="title text-danger">2019 - 2021</h6>
+                            <P>Technical Diploma in Computer Communications and Network Engineering</P>
+                            <P class="subtitle">I gained extensive knowledge about computer systems and communications during my time at the Lebanese University. Unfortunately, due to the epidemic, 
+                                the university faced administrative challenges that led to a decline in its standards, compelling me to halt my pursuit of that degree. Nonetheless, I remained determined 
+                                and resourceful, acquiring valuable hands-on experience in programming and electronics despite the setback.
+                            </P>
                             <hr>
-                            <h6 class="title text-danger">2015 - 2016</h6>
+                            <h6 class="title text-danger">2018 - 2019</h6>
                             <P>High School Degree</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
+                            <P class="subtitle">Throughout my school years, I harbored a relentless curiosity for understanding the inner workings of various systems, driving me to eagerly 
+                                delve into troubleshooting and repairing technical issues whenever they arose. This innate drive to explore and solve problems not only fueled my passion 
+                                for learning but also laid the foundation for my adeptness in diagnosing and resolving complex technical challenges later in my career.
+                            </P>
                             
                         </div>
                     </div>
@@ -183,7 +238,7 @@
                             </div>
                         </div>
                         <div class="card-body pb-2">
-                           <h6>hTL5 &amp; CSS3</h6>
+                           <h6>HTML &amp; CSS5</h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
@@ -199,14 +254,19 @@
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>Laborum</h6>
+                            <h6>Python</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>C#</h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>Tempora</h6>
+                            <h6>C++</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
+                            
                         </div>
                     </div>
                     <div class="card">
@@ -219,15 +279,15 @@
                         <div class="card-body pb-2">
                            <h6>English</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>French</h6>
+                            <h6>Arabic</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <h6>Spanish</h6>
+                            <h6>Japanese</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 67%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
@@ -245,7 +305,7 @@
                             <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">500</h1>
+                            <h1 class="text-danger font-weight-bold font40">2000</h1>
                             <p class="text-light mb-1">Hours Worked</p>
                         </div>
                     </div>
@@ -256,7 +316,7 @@
                             <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">50K</h1>
+                            <h1 class="text-danger font-weight-bold font40">30</h1>
                             <p class="text-light mb-1">Project Finished</p>
                         </div>
                     </div>
@@ -267,7 +327,7 @@
                             <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">200K</h1>
+                            <h1 class="text-danger font-weight-bold font40">1000</h1>
                             <p class="text-light mb-1">Happy Clients</p>
                         </div>
                     </div>
@@ -297,8 +357,10 @@
                             <i class="ti-vector text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Ullam</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                            <h5 class="mb-3 card-title text-dark">Machine learing Models</h5>
+                            <P class="subtitle">I offer expertise in designing and implementing machine learning models tailored to your specific needs. With a focus on innovation and accuracy, 
+                                                I strive to deliver solutions that optimize performance and drive results.
+                            </P>
                         </div>
                     </div>
                 </div>
@@ -308,8 +370,10 @@
                             <i class="ti-write text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Asperiores</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                            <h5 class="mb-3 card-title text-dark">Embeded systems</h5>
+                            <P class="subtitle">Specializing in embedded systems development, I provide comprehensive solutions for integrating hardware and software, 
+                                                ensuring seamless functionality across various applications and environments.
+                                            </P>
                         </div>
                     </div>
                 </div>
@@ -319,8 +383,10 @@
                             <i class="ti-package text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Tempora</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                            <h5 class="mb-3 card-title text-dark">Robotics</h5>
+                            <P class="subtitle">With expertise in robotics engineering, I offer services ranging from robotic system design and integration to 
+                                programming and optimization. Leveraging cutting-edge technologies, I deliver solutions that enhance efficiency and productivity.
+                            </P>
                         </div>
                     </div>
                 </div>
@@ -330,8 +396,10 @@
                             <i class="ti-map-alt text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Provident</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                            <h5 class="mb-3 card-title text-dark">Software Development</h5>
+                            <P class="subtitle">Offering end-to-end software development services, I specialize in creating robust, scalable, and user-friendly 
+                                applications tailored to meet your unique requirements. From concept to deployment, I ensure a seamless development process and exceptional quality.
+                            </P>
                         </div>
                     </div>
                 </div>
@@ -341,8 +409,12 @@
                             <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Consectetur</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                            <h5 class="mb-3 card-title text-dark">IoT (Internet of Things) Development</h5>
+                            <P class="subtitle">Unlock the potential of interconnected devices with our IoT development services. We specialize in creating innovative solutions that 
+                                leverage the power of IoT to streamline operations, enhance efficiency, and drive growth. From sensor integration to data analytics and remote monitoring 
+                                systems, we design and deploy custom IoT applications tailored to your unique requirements. Whether you're looking to optimize processes, improve decision-making,
+                                 or create new revenue streams, our IoT expertise empowers you to stay ahead in today's connected world.
+                                </P>
                         </div>
                     </div>
                 </div>
@@ -352,15 +424,19 @@
                             <i class="ti-support text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Veritatis</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                            <h5 class="mb-3 card-title text-dark">Cybersecurity Solutions</h5>
+                            <P class="subtitle">In an increasingly digital world, protecting sensitive data and digital assets is paramount. With our cybersecurity solutions, we offer 
+                                comprehensive services to fortify your digital infrastructure against evolving threats. Our expertise spans threat detection, vulnerability assessments, 
+                                and the implementation of robust security measures tailored to your specific needs. From small businesses to large enterprises, we ensure data integrity, 
+                                confidentiality, and availability, safeguarding your organization's reputation and bottom line.
+                            </P>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+<!--
     <section class="section bg-custom-gray" id="price">
         <div class="container">
             <h1 class="mb-5"><span class="text-danger">Packs</span> Pricing</h1>
@@ -441,9 +517,10 @@
             <h2 class="text-light mb-5 font-weight-normal">I Am Available For FreeLance</h2>
             <button class="btn bg-primary w-lg" >Hire me</button>
         </div>
-    </section>
+    </section>-->
 
     <!-- Portfolio Section -->
+    <!--
     <section class="section bg-custom-gray" id="portfolio">
         <div class="container">
             <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
@@ -625,8 +702,9 @@
             </div>  
         </div>            
     </section>
+    -->
     <!-- End of portfolio section -->
-
+<!--
     <section class="section" id="blog">
         <div class="container">
             <h2 class="mb-5">Latest <span class="text-danger">News</span></h2>
@@ -651,9 +729,12 @@
 
                         <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
                     </div>
-                </div><!-- end of blog wrapper -->
-
+                    
+                </div>-->
+                <!-- end of blog wrapper -->
+                
                 <!-- blog-card -->
+                <!--
                 <div class="blog-card">
                     <div class="img-holder">
                         <img src="assets/imgs/blog2.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
@@ -671,8 +752,10 @@
 
                         <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
                     </div>
-                </div><!-- end of blog wrapper -->
+                </div>
+                --><!-- end of blog wrapper -->
                 <!-- blog-card -->
+                <!--
                 <div class="blog-card">
                     <div class="img-holder">
                         <img src="assets/imgs/blog3.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
@@ -690,7 +773,8 @@
 
                         <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
                     </div>
-                </div><!-- end of blog wrapper -->
+                </div>-->
+                <!-- end of blog wrapper -->
 
             </div>
         </div>
@@ -700,6 +784,7 @@
         <div id="map" class="map"></div>
         <div class="container">
             <div class="row">
+                <!--
                 <div class="col-lg-8">
                     <div class="contact-form-card">
                         <h4 class="contact-title">Send a message</h4>
@@ -719,6 +804,7 @@
                         </form>
                     </div>
                 </div>
+                -->
                 <div class="col-lg-4">
                     <div class="contact-info-card">
                         <h4 class="contact-title">Get in touch</h4>
@@ -727,7 +813,7 @@
                                 <i class="ti-mobile icon-md"></i>
                             </div>
                             <div class="col-10 ">
-                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (123) 456-789</span></h6>
+                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (961) 71397813</span></h6>
                             </div>
                         </div>
                         <div class="row mb-2">
@@ -735,7 +821,7 @@
                                 <i class="ti-map-alt icon-md"></i>
                             </div>
                             <div class="col-10">
-                                <h6 class="d-inline">Address :<br> <span class="text-muted">12345 Fake ST NoWhere AB Country.</span></h6>
+                                <h6 class="d-inline">Address :<br> <span class="text-muted">1501 Aley, Lebanon</span></h6>
                             </div>
                         </div>
                         <div class="row mb-2">
@@ -743,15 +829,12 @@
                                 <i class="ti-envelope icon-md"></i>
                             </div>
                             <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <span class="text-muted">info@website.com</span></h6>
+                                <h6 class="d-inline">Email :<br> <span class="text-muted">jabernizar98@gmail.com</span></h6>
                             </div>
                         </div>
                         <ul class="social-icons pt-4">
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link" href="mailto:jabernizar98@gmail.com"><i class="ti-google" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link" href="https://github.com/NizarSH98/NizarSH98"><i class="ti-github" aria-hidden="true"></i></a></li>
                         </ul> 
                     </div>
                 </div>
