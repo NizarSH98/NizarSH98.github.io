@@ -1,0 +1,57 @@
+<!-- projects/project1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Fire Extinguisher</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + JohnDoe main styles -->
+    <link rel="stylesheet" href="assets/css/johndoe.css">
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="assets\css\projectStyles.css">
+</head>
+<body>
+    <!-- Your HTML content here -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="NizarSH98.github.io\index.html">Nizar Shehayeb</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h2 class="mt-5">Smart Fire Extinguisher</h2>
+        <p>A detailed description of Project 1.</p>
+        <img src="assets\screenshots\Swift_Product_Classifier\Screeenshots\detect.PNG" alt="Detection Script" class="thumbnail" onclick="toggleFullSize(this)">
+        <img src="assets\screenshots\Swift_Product_Classifier\Screeenshots\eval.PNG" alt="Evaluation" class="thumbnail" onclick="toggleFullSize(this)">
+        <img src="assets\screenshots\Swift_Product_Classifier\Screeenshots\files.PNG" alt="Screenshot of files" class="thumbnail" onclick="toggleFullSize(this)">
+        <img src="assets\screenshots\Swift_Product_Classifier\Screeenshots\Genrate_Data.PNG" alt="Data Generation" class="thumbnail" onclick="toggleFullSize(this)">
+        <img src="assets\screenshots\Swift_Product_Classifier\Screeenshots\train.PNG" alt="Training" class="thumbnail" onclick="toggleFullSize(this)">
+        <!-- Add other images here -->
+        <video controls class="w-100 mt-3">
+            <source src="../path/to/your/project1-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="mt-3"><a href="../index.html" class="btn btn-secondary">Back to Portfolio</a></p>
+    </div>
+
+    <!-- Your JavaScript code here -->
+    <script>
+        function toggleFullSize(element) {
+    element.classList.toggle('full-size'); // Toggle the 'full-size' class
+}
+        document.addEventListener('DOMContentLoaded', function() {
+  const images = document.querySelectorAll('.click-toggle');
+  images.forEach(function(img) {
+    img.addEventListener('click', function() {
+      this.classList.toggle('clicked');
+    });
+    img.addEventListener('mouseleave', function() {
+      this.classList.remove('clicked');
+    });
+  });
+});
+
+    </script>
+</body>
+</html>

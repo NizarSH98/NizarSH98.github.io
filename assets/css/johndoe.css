@@ -5096,6 +5096,7 @@ input[type="button"].btn-block {
 
 .card-text:last-child {
   margin-bottom: 0;
+  font-size: 30px !important;
 }
 
 .card-link:hover {
