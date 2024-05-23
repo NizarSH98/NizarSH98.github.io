@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.resume {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.job, .degree, .project {
+    margin-bottom: 15px;
+}
+
+.job h3, .degree h3, .project h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.job p, .degree p, .project p {
+    margin: 5px 0;
+    color: #666;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    flex: 0.2;
+    margin: 0;
+    font-size: 1em;
+    margin-left: 10px; /* Add some space between the skill name and the bar */
+}
+
+.progress-container {
+    flex: 0 0 25%;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 5px;
+    margin-right: 100px;  
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+    text-align: center;
+}
+
+footer .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .contact-info p {
+    margin: 10px 10px;
+}
+
+
