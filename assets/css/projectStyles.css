@@ -15,7 +15,6 @@
     cursor: pointer; /* Change cursor to pointer on hover */
 }
 
-/* Custom CSS */
 .thumbnail-img {
     transition: transform 0.3s ease-in-out;
 }

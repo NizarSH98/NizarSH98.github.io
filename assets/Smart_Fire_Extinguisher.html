@@ -24,14 +24,48 @@
     </nav>
     <div class="container">
         <h2 class="mt-5">Smart Fire Extinguisher</h2>
-        <p>A detailed description of Project 1.</p>
-        <img src="../path/to/your/screenshot1.jpg" alt="Screenshot of Project 1" class="img-fluid">
+        <p>
+            <h1>Smart Water Sprinkler System for Fire Detection and Extinguishing</h1>
+        This project presents the development and implementation of an advanced Smart Water Sprinkler System designed for fire detection and extinguishing. Utilizing artificial intelligence (AI), robotics, and high-pressure sprinkler technology, the system aims to address critical limitations in current firefighting methodologies. The AI component employs a model trained on a diverse dataset to accurately detect fires, while a precision-focused robotic arm precisely points to the source. The high-pressure sprinkler system ensures rapid and efficient extinguishing. The system architecture outlines the seamless interaction of these components.
+        <h2>System Design</h2>
+        Our system aims to revolutionize traditional firefighting methods by creating a comprehensive system capable of monitoring a room, detecting fires, extinguishing them, and rechecking for any remaining flames. Key components include:
+        <ul>
+            <li><strong>Raspberry Pi Camera and Thermal Imager:</strong> Mounted on a servo motor for swiveling in 5-degree increments to monitor the room.</li>
+            <li><strong>YOLOv5 Model:</strong> Runs on the Raspberry Pi for real-time fire detection.</li>
+            <li><strong>NodeMCU32-S:</strong> Controls the servo motors based on coordinates received from the Raspberry Pi.</li>
+            <li><strong>Robotic Arm:</strong> A 2 DOF arm with MG995 Servo motors for precise targeting.</li>
+            <li><strong>High-Pressure Water Sprinkler:</strong> Controlled by an Arduino relay connected to a water pump.</li>
+        </ul>
+        The system is housed in an 80x80x40 cm enclosure, simulating a room environment, with all electrical components protected in a Plexiglas enclosure.
+    
+            <link rel = "Github Project repo" href="https://github.com/NizarSH98/SmartFireExtinguisher">
+        </p>
+        <img src="../assets/Screenshots/Smart_Fire_Extinguisher/WhatsApp Image 2024-06-04 at 12.38.41 AM.jpeg" alt="Screenshot of Project 1" class="thumbnail" onclick="toggleFullSize(this)">
+        <img src="../assets/Screenshots/Smart_Fire_Extinguisher/WhatsApp Image 2024-06-04 at 12.38.42 AM.jpeg" alt="Screenshot of Project 1" class="thumbnail" onclick="toggleFullSize(this)">
+        <img src="../assets/Screenshots/Smart_Fire_Extinguisher/WhatsApp Image 2024-06-04 at 12.38.44 AM.jpeg" alt="Screenshot of Project 1" class="thumbnail" onclick="toggleFullSize(this)">
+        <img src="../assets/Screenshots/Smart_Fire_Extinguisher/WhatsApp Image 2024-06-04 at 12.38.45 AM.jpeg" alt="Screenshot of Project 1" class="thumbnail" onclick="toggleFullSize(this)">
         <video controls class="w-100 mt-3">
-            <source src="../path/to/your/project1-video.mp4" type="video/mp4">
+            <source src="../assets/video/Smart_Fire_Extinguisher/firesmart.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <p class="mt-3"><a href="../index.html" class="btn btn-secondary">Back to Portfolio</a></p>
     </div>
+    <script>
+        function toggleFullSize(element) {
+            element.classList.toggle('full-size'); // Toggle the 'full-size' class
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.thumbnail');
+            images.forEach(function(img) {
+                img.addEventListener('click', function() {
+                    this.classList.toggle('clicked');
+                });
+                img.addEventListener('mouseleave', function() {
+                    this.classList.remove('clicked');
+                });
+            });
+        });
+    </script>
 </div>
 </body>
 </html>
