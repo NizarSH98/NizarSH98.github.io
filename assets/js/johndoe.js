@@ -1,150 +1,127 @@
 /*!
 =========================================================
-* JohnDoe Landing page
+* Portfolio enhancements for Nizar Shehayeb
 =========================================================
-
-* Copyright: 2019 DevCRUD (https://devcrud.com)
-* Licensed: (https://devcrud.com/licenses)
-* Coded by www.devcrud.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// smooth scroll
-$(document).ready(function(){
-    $(".navbar .nav-link").on('click', function(event) {
+(function () {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-        if (this.hash !== "") {
+  document.addEventListener('DOMContentLoaded', () => {
+    initNavToggle();
+    initSmoothScroll();
+    initMetricCounters();
+    initCurrentYear();
+    initGalleries();
+  });
 
-            event.preventDefault();
+  function initNavToggle() {
+    const nav = document.querySelector('.primary-nav');
+    const toggle = document.querySelector('[data-nav-toggle]');
+    if (!nav || !toggle) return;
 
-            var hash = this.hash;
-
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 700, function(){
-                window.location.hash = hash;
-            });
-        } 
+    toggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('primary-nav--open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
     });
-});
 
-// protfolio filters
-$(window).on("load", function() {
-    var t = $(".portfolio-container");
-    t.isotope({
-        filter: ".new",
-        animationOptions: {
-            duration: 750,
-            easing: "linear",
-            queue: !1
+    nav.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('primary-nav--open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  function initSmoothScroll() {
+    if ('scrollBehavior' in document.documentElement.style === false) {
+      return;
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener('click', (event) => {
+        const id = anchor.getAttribute('href');
+        if (!id || id === '#') return;
+        const target = document.querySelector(id);
+        if (!target) return;
+        event.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+        if (typeof target.tabIndex !== 'number' || target.tabIndex < 0) {
+          target.setAttribute('tabindex', '-1');
         }
-    }), $(".filters a").click(function() {
-        $(".filters .active").removeClass("active"), $(this).addClass("active");
-        var i = $(this).attr("data-filter");
-        return t.isotope({
-            filter: i,
-            animationOptions: {
-                duration: 750,
-                easing: "linear",
-                queue: !1
-            }
-        }), !1
+        target.focus({ preventScroll: true });
+      });
     });
-});
+  }
 
+  function initMetricCounters() {
+    const counters = document.querySelectorAll('[data-count-to]');
+    if (!counters.length || prefersReducedMotion) return;
 
-// google maps
-function initMap() {
-// Styles a map in night mode.
-    var map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 40.674, lng: -73.945},
-        zoom: 12,
-        scrollwheel:  false,
-        navigationControl: false,
-        mapTypeControl: false,
-        scaleControl: false,
-      styles: [
-        {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
-        {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
-        {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
-        {
-          featureType: 'administrative.locality',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#d59563'}]
-        },
-        {
-          featureType: 'poi',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#d59563'}]
-        },
-        {
-          featureType: 'poi.park',
-          elementType: 'geometry',
-          stylers: [{color: '#263c3f'}]
-        },
-        {
-          featureType: 'poi.park',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#6b9a76'}]
-        },
-        {
-          featureType: 'road',
-          elementType: 'geometry',
-          stylers: [{color: '#38414e'}]
-        },
-        {
-          featureType: 'road',
-          elementType: 'geometry.stroke',
-          stylers: [{color: '#212a37'}]
-        },
-        {
-          featureType: 'road',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#9ca5b3'}]
-        },
-        {
-          featureType: 'road.highway',
-          elementType: 'geometry',
-          stylers: [{color: '#746855'}]
-        },
-        {
-          featureType: 'road.highway',
-          elementType: 'geometry.stroke',
-          stylers: [{color: '#1f2835'}]
-        },
-        {
-          featureType: 'road.highway',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#f3d19c'}]
-        },
-        {
-          featureType: 'transit',
-          elementType: 'geometry',
-          stylers: [{color: '#2f3948'}]
-        },
-        {
-          featureType: 'transit.station',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#d59563'}]
-        },
-        {
-          featureType: 'water',
-          elementType: 'geometry',
-          stylers: [{color: '#17263c'}]
-        },
-        {
-          featureType: 'water',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#515c6d'}]
-        },
-        {
-          featureType: 'water',
-          elementType: 'labels.text.stroke',
-          stylers: [{color: '#17263c'}]
+    const animateCounter = (el) => {
+      const target = Number(el.dataset.countTo);
+      if (!Number.isFinite(target)) return;
+      const duration = 1200;
+      let start = null;
+
+      const step = (timestamp) => {
+        if (!start) {
+          start = timestamp;
         }
-      ]
+        const progress = Math.min((timestamp - start) / duration, 1);
+        const value = Math.floor(progress * target);
+        el.textContent = value.toLocaleString();
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+
+      window.requestAnimationFrame(step);
+    };
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach((counter) => observer.observe(counter));
+  }
+
+  function initCurrentYear() {
+    const yearEl = document.getElementById('current-year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+  }
+
+  function initGalleries() {
+    const galleries = document.querySelectorAll('[data-gallery]');
+    if (!galleries.length) return;
+
+    galleries.forEach((gallery) => {
+      const buttons = gallery.querySelectorAll('button[data-gallery-item]');
+      const preview = gallery.querySelector('[data-gallery-preview]');
+      if (!buttons.length || !preview) return;
+
+      buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const template = button.querySelector('template');
+          if (!template) return;
+          preview.innerHTML = template.innerHTML;
+          preview.querySelectorAll('img').forEach((img) => img.removeAttribute('loading'));
+          buttons.forEach((btn) => btn.classList.remove('is-active'));
+          button.classList.add('is-active');
+        });
+      });
+
+      const activeButton = gallery.querySelector('button.is-active[data-gallery-item]') || buttons[0];
+      if (activeButton) {
+        activeButton.click();
+      }
     });
-}
+  }
+})();

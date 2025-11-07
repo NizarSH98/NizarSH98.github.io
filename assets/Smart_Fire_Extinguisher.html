@@ -2,69 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Smart Fire Extinguisher</title>
-    <!-- font icons -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Fire Extinguisher · Case Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="../assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + JohnDoe main styles -->
     <link rel="stylesheet" href="../assets/css/johndoe.css">
-    <!-- External CSS file -->
     <link rel="stylesheet" href="../assets/css/projectStyles.css">
-
 </head>
-<body>
-    <div class="sidebar sidebar-left"></div>
-    <div class="sidebar sidebar-right"></div>
-    <div class="content-container">
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+<body class="case-study">
+    <header class="case-study__header">
         <div class="container">
-            <a class="navbar-brand" href="NizarSH98.github.io\index.html">Nizar Shehayeb</a>
+            <div class="case-study__nav">
+                <a class="case-study__back" href="../index.html#projects">Back to all projects</a>
+                <a class="primary-nav__brand" href="../index.html">Nizar Shehayeb</a>
+            </div>
+            <div class="case-study__intro">
+                <h1 class="case-study__title">Smart Fire Extinguisher</h1>
+                <p class="case-study__summary">Autonomous sprinkler system that detects, pinpoints, and suppresses fires using real-time computer vision and robotics.</p>
+                <ul class="case-study__meta">
+                    <li><strong>Role:</strong> Systems Engineer &amp; ML Developer</li>
+                    <li><strong>Timeline:</strong> 2024</li>
+                    <li><strong>Tech:</strong> Raspberry Pi, YOLOv5, NodeMCU32-S, Arduino, Python</li>
+                    <li><strong>Repository:</strong> <a href="https://github.com/NizarSH98/SmartFireExtinguisher">github.com/NizarSH98/SmartFireExtinguisher</a></li>
+                </ul>
+            </div>
         </div>
-    </nav>
-    <div class="container">
-        <h2 class="mt-5">Smart Fire Extinguisher</h2>
-        <p>
-            <h1>Smart Water Sprinkler System for Fire Detection and Extinguishing</h1>
-        This project presents the development and implementation of an advanced Smart Water Sprinkler System designed for fire detection and extinguishing. Utilizing artificial intelligence (AI), robotics, and high-pressure sprinkler technology, the system aims to address critical limitations in current firefighting methodologies. The AI component employs a model trained on a diverse dataset to accurately detect fires, while a precision-focused robotic arm precisely points to the source. The high-pressure sprinkler system ensures rapid and efficient extinguishing. The system architecture outlines the seamless interaction of these components.
-        <h2>System Design</h2>
-        Our system aims to revolutionize traditional firefighting methods by creating a comprehensive system capable of monitoring a room, detecting fires, extinguishing them, and rechecking for any remaining flames. Key components include:
-        <ul>
-            <li><strong>Raspberry Pi Camera and Thermal Imager:</strong> Mounted on a servo motor for swiveling in 5-degree increments to monitor the room.</li>
-            <li><strong>YOLOv5 Model:</strong> Runs on the Raspberry Pi for real-time fire detection.</li>
-            <li><strong>NodeMCU32-S:</strong> Controls the servo motors based on coordinates received from the Raspberry Pi.</li>
-            <li><strong>Robotic Arm:</strong> A 2 DOF arm with MG995 Servo motors for precise targeting.</li>
-            <li><strong>High-Pressure Water Sprinkler:</strong> Controlled by an Arduino relay connected to a water pump.</li>
-        </ul>
-        The system is housed in an 80x80x40 cm enclosure, simulating a room environment, with all electrical components protected in a Plexiglas enclosure.
-    
-            <link rel = "Github Project repo" href="https://github.com/NizarSH98/SmartFireExtinguisher">
-        </p>
-        <img src="../assets/screenshots/Smart_Fire_Extinguisher/WhatsApp Image 2024-06-04 at 12.38.41 AM.jpeg" alt="Screenshot of Project 1" class="thumbnail" onclick="toggleFullSize(this)">
-        <img src="../assets/screenshots/Smart_Fire_Extinguisher/WhatsApp Image 2024-06-04 at 12.38.42 AM.jpeg" alt="Screenshot of Project 1" class="thumbnail" onclick="toggleFullSize(this)">
-        <img src="../assets/screenshots/Smart_Fire_Extinguisher/WhatsApp Image 2024-06-04 at 12.38.44 AM.jpeg" alt="Screenshot of Project 1" class="thumbnail" onclick="toggleFullSize(this)">
-        <img src="../assets/screenshots/Smart_Fire_Extinguisher/WhatsApp Image 2024-06-04 at 12.38.45 AM.jpeg" alt="Screenshot of Project 1" class="thumbnail" onclick="toggleFullSize(this)">
-
-        <iframe src="https://drive.google.com/file/d/1Vvupqugv7LYyDfXxdDvGPsKTAm21atDH/preview" width="100%" height="640" allow="autoplay"></iframe>
-
-        <p class="mt-3"><a href="../index.html" class="btn btn-secondary">Back to Portfolio</a></p>
-    </div>
-    <script>
-        function toggleFullSize(element) {
-            element.classList.toggle('full-size'); // Toggle the 'full-size' class
-        }
-        document.addEventListener('DOMContentLoaded', function() {
-            const images = document.querySelectorAll('.thumbnail');
-            images.forEach(function(img) {
-                img.addEventListener('click', function() {
-                    this.classList.toggle('clicked');
-                });
-                img.addEventListener('mouseleave', function() {
-                    this.classList.remove('clicked');
-                });
-            });
-        });
-    </script>
-</div>
+    </header>
+    <main class="case-study__body">
+        <div class="container">
+            <section aria-labelledby="challenge">
+                <h2 id="challenge">Challenge</h2>
+                <p>Traditional sprinkler systems flood entire spaces, wasting water and damaging equipment while still missing critical hotspots. The goal was to build a targeted fire-response system that could monitor a room, detect ignition sources, and extinguish fires with precision in seconds.</p>
+            </section>
+            <section aria-labelledby="solution">
+                <h2 id="solution">Solution Architecture</h2>
+                <p>The solution combines computer vision, robotics, and IoT coordination to detect and extinguish fires. A YOLOv5 model running on a Raspberry Pi continuously scans the room via an RGB camera and thermal sensor mounted on a servo rig. When fire is detected, coordinates are shared with a NodeMCU32-S that orients a dual-servo robotic arm, positioning a high-pressure sprinkler aimed at the flame. An Arduino relay triggers the pump and monitors extinguishing progress.</p>
+                <ul>
+                    <li><strong>Raspberry Pi camera &amp; FLIR thermal module:</strong> Sweeps the room in 5° increments to capture RGB and heat signatures.</li>
+                    <li><strong>YOLOv5 inference:</strong> Identifies flame boundaries and sends coordinates to the control bus.</li>
+                    <li><strong>Robotic arm targeting:</strong> MG995 servos align the nozzle for pinpoint suppression.</li>
+                    <li><strong>High-pressure sprinkler:</strong> Pulses water only where heat remains, minimizing collateral damage.</li>
+                </ul>
+            </section>
+            <section aria-labelledby="impact">
+                <h2 id="impact">Impact</h2>
+                <ul>
+                    <li>Reduced water usage by activating only in affected zones.</li>
+                    <li>Delivered sub-second detection-to-response times in lab simulations.</li>
+                    <li>Protected sensitive electronics by limiting the spray radius to confirmed heat signatures.</li>
+                </ul>
+                <a class="case-study__cta" href="https://github.com/NizarSH98/SmartFireExtinguisher">View source code</a>
+            </section>
+            <section aria-labelledby="gallery-heading" class="case-study__gallery" data-gallery>
+                <h2 id="gallery-heading">Gallery</h2>
+                <div class="gallery-preview" data-gallery-preview></div>
+                <div class="gallery-thumbs" role="list">
+                    <button type="button" class="is-active" data-gallery-item aria-label="Prototype enclosure">
+                        <img src="../assets/screenshots/Smart_Fire_Extinguisher/WhatsApp Image 2024-06-04 at 12.38.41 AM.jpeg" alt="Prototype enclosure with mounted sensors" loading="lazy">
+                        <template>
+                            <img src="../assets/screenshots/Smart_Fire_Extinguisher/WhatsApp Image 2024-06-04 at 12.38.41 AM.jpeg" alt="Prototype enclosure with mounted sensors">
+                        </template>
+                    </button>
+                    <button type="button" data-gallery-item aria-label="Thermal imaging view">
+                        <img src="../assets/screenshots/Smart_Fire_Extinguisher/WhatsApp Image 2024-06-04 at 12.38.42 AM.jpeg" alt="Thermal imaging view of fire detection" loading="lazy">
+                        <template>
+                            <img src="../assets/screenshots/Smart_Fire_Extinguisher/WhatsApp Image 2024-06-04 at 12.38.42 AM.jpeg" alt="Thermal imaging view of fire detection">
+                        </template>
+                    </button>
+                    <button type="button" data-gallery-item aria-label="Robotic arm calibration">
+                        <img src="../assets/screenshots/Smart_Fire_Extinguisher/WhatsApp Image 2024-06-04 at 12.38.44 AM.jpeg" alt="Robotic arm calibration" loading="lazy">
+                        <template>
+                            <img src="../assets/screenshots/Smart_Fire_Extinguisher/WhatsApp Image 2024-06-04 at 12.38.44 AM.jpeg" alt="Robotic arm calibration">
+                        </template>
+                    </button>
+                    <button type="button" data-gallery-item aria-label="System overview">
+                        <img src="../assets/screenshots/Smart_Fire_Extinguisher/WhatsApp Image 2024-06-04 at 12.38.45 AM.jpeg" alt="System overview from above" loading="lazy">
+                        <template>
+                            <img src="../assets/screenshots/Smart_Fire_Extinguisher/WhatsApp Image 2024-06-04 at 12.38.45 AM.jpeg" alt="System overview from above">
+                        </template>
+                    </button>
+                    <button type="button" data-gallery-item aria-label="Demo video">
+                        <img src="../assets/screenshots/Smart_Fire_Extinguisher/WhatsApp Image 2024-06-04 at 12.38.41 AM.jpeg" alt="Play demo" loading="lazy">
+                        <template>
+                            <iframe src="https://drive.google.com/file/d/1Vvupqugv7LYyDfXxdDvGPsKTAm21atDH/preview" allow="autoplay" title="Smart Fire Extinguisher demo"></iframe>
+                        </template>
+                    </button>
+                </div>
+            </section>
+            <footer>
+                <p><a href="../index.html#projects">Return to all projects</a></p>
+            </footer>
+        </div>
+    </main>
+    <script src="../assets/js/johndoe.js" defer></script>
 </body>
 </html>

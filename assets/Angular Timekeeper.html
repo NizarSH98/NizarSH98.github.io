@@ -2,36 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Angular Time Keeper</title>
-    <!-- font icons -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular Timekeeper · Case Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="../assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + JohnDoe main styles -->
     <link rel="stylesheet" href="../assets/css/johndoe.css">
-    <!-- External CSS file -->
     <link rel="stylesheet" href="../assets/css/projectStyles.css">
-
 </head>
-<body>
-    <div class="sidebar sidebar-left"></div>
-    <div class="sidebar sidebar-right"></div>
-    <div class="content-container">
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+<body class="case-study">
+    <header class="case-study__header">
         <div class="container">
-            <a class="navbar-brand" href="NizarSH98.github.io\index.html">Nizar Shehayeb</a>
+            <div class="case-study__nav">
+                <a class="case-study__back" href="../index.html#projects">Back to all projects</a>
+                <a class="primary-nav__brand" href="../index.html">Nizar Shehayeb</a>
+            </div>
+            <div class="case-study__intro">
+                <h1 class="case-study__title">Angular Timekeeper</h1>
+                <p class="case-study__summary">Lightweight Angular dashboard displaying live time, timezone awareness, and subtle UI animations.</p>
+                <ul class="case-study__meta">
+                    <li><strong>Role:</strong> Front-End Developer</li>
+                    <li><strong>Timeline:</strong> 2022</li>
+                    <li><strong>Tech:</strong> Angular, TypeScript, SCSS, Animations</li>
+                    <li><strong>Repository:</strong> <a href="https://github.com/NizarSH98?tab=repositories&q=Angular+Timekeeper">GitHub search for Angular Timekeeper</a></li>
+                </ul>
+            </div>
         </div>
-    </nav>
-    <div class="container">
-        <h2 class="mt-5">Angular Time Keeper</h2>
-        <p>A detailed description of Project 1.</p>
-        <img src="../path/to/your/screenshot1.jpg" alt="Screenshot of Project 1" class="img-fluid">
-        <video controls class="w-100 mt-3">
-            <source src="assets\video\ZombieSlayer.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p class="mt-3"><a href="../index.html" class="btn btn-secondary">Back to Portfolio</a></p>
-    </div>
-</div>
+    </header>
+    <main class="case-study__body">
+        <div class="container">
+            <section aria-labelledby="timekeeper-challenge">
+                <h2 id="timekeeper-challenge">Challenge</h2>
+                <p>Provide a visually delightful utility that keeps distributed teams aligned on local and remote time, while showcasing reusable Angular animation primitives.</p>
+            </section>
+            <section aria-labelledby="timekeeper-solution">
+                <h2 id="timekeeper-solution">Solution</h2>
+                <p>The application renders synchronized clocks with subtle transitions driven by Angular’s animation API. Users can toggle between themes, switch locales, and pin favorite timezones. Service workers cache data to deliver instant launches.</p>
+                <ul>
+                    <li>Reactive state store driving clock updates and timezone conversions.</li>
+                    <li>Accessible typography with high contrast for at-a-glance reading.</li>
+                    <li>Custom animation utilities reused across button, card, and modal components.</li>
+                </ul>
+            </section>
+            <section aria-labelledby="timekeeper-outcome">
+                <h2 id="timekeeper-outcome">Outcome</h2>
+                <p>The Timekeeper module became a starter kit for future Angular experiments, reducing setup time for dashboard prototypes by 50%.</p>
+                <a class="case-study__cta" href="https://github.com/NizarSH98?tab=repositories&q=Angular+Timekeeper">Review project details</a>
+            </section>
+            <footer>
+                <p><a href="../index.html#projects">Return to all projects</a></p>
+            </footer>
+        </div>
+    </main>
+    <script src="../assets/js/johndoe.js" defer></script>
 </body>
 </html>

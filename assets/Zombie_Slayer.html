@@ -2,36 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Zombie Slayer</title>
-    <!-- font icons -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zombie Slayer · Case Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="../assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + JohnDoe main styles -->
     <link rel="stylesheet" href="../assets/css/johndoe.css">
-    <!-- External CSS file -->
     <link rel="stylesheet" href="../assets/css/projectStyles.css">
-
 </head>
-<body>
-    <div class="sidebar sidebar-left"></div>
-    <div class="sidebar sidebar-right"></div>
-    <div class="content-container">
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+<body class="case-study">
+    <header class="case-study__header">
         <div class="container">
-            <a class="navbar-brand" href="NizarSH98.github.io\index.html">Nizar Shehayeb</a>
+            <div class="case-study__nav">
+                <a class="case-study__back" href="../index.html#projects">Back to all projects</a>
+                <a class="primary-nav__brand" href="../index.html">Nizar Shehayeb</a>
+            </div>
+            <div class="case-study__intro">
+                <h1 class="case-study__title">Zombie Slayer</h1>
+                <p class="case-study__summary">Custom C# action game demonstrating bespoke engine systems, AI behaviors, and responsive combat loops.</p>
+                <ul class="case-study__meta">
+                    <li><strong>Role:</strong> Game Developer</li>
+                    <li><strong>Timeline:</strong> 2021</li>
+                    <li><strong>Tech:</strong> C#, MonoGame, Custom Engine, Pixel Art</li>
+                    <li><strong>Repository:</strong> <a href="https://github.com/NizarSH98?tab=repositories&q=Zombie+Slayer">GitHub search for Zombie Slayer</a></li>
+                </ul>
+            </div>
         </div>
-    </nav>
-    <div class="container">
-        <h2 class="mt-5">Zombie Slayer</h2>
-        <p>A detailed description of Project 1.</p>
-        <img src="../path/to/your/screenshot1.jpg" alt="Screenshot of Project 1" class="img-fluid">
-        <video controls class="w-100 mt-3">
-            <source src="assets\video\ZombieSlayer.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p class="mt-3"><a href="../index.html" class="btn btn-secondary">Back to Portfolio</a></p>
-    </div>
-</div>
+    </header>
+    <main class="case-study__body">
+        <div class="container">
+            <section aria-labelledby="zombie-challenge">
+                <h2 id="zombie-challenge">Challenge</h2>
+                <p>Prototype a responsive combat experience with handcrafted enemy behaviors, level design, and soundtrack—without relying on heavyweight engines.</p>
+            </section>
+            <section aria-labelledby="zombie-solution">
+                <h2 id="zombie-solution">Solution</h2>
+                <p>The game engine manages sprite batching, collision systems, and state transitions. AI-controlled zombies use finite state machines for patrol, chase, and attack phases. Particle systems add punch to hits and explosions.</p>
+                <ul>
+                    <li>Entity-component system isolates rendering, physics, and audio layers.</li>
+                    <li>Input buffering ensures combo moves feel responsive.</li>
+                    <li>Difficulty scalers adjust spawn rates based on player performance.</li>
+                </ul>
+            </section>
+            <section aria-labelledby="zombie-outcome">
+                <h2 id="zombie-outcome">Outcome</h2>
+                <p>The prototype evolved into a teaching tool for introducing students to game loop concepts and responsive input design.</p>
+                <a class="case-study__cta" href="https://github.com/NizarSH98?tab=repositories&q=Zombie+Slayer">Explore the engine</a>
+            </section>
+            <section aria-labelledby="zombie-gallery" class="case-study__gallery" data-gallery>
+                <h2 id="zombie-gallery">Gallery</h2>
+                <div class="gallery-preview" data-gallery-preview></div>
+                <div class="gallery-thumbs" role="list">
+                    <button type="button" class="is-active" data-gallery-item aria-label="Gameplay demo">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='180' viewBox='0 0 320 180'><rect width='320' height='180' rx='16' ry='16' fill='%23212529'/><polygon points='135,60 135,120 190,90' fill='%23F85C70'/></svg>" alt="Play the Zombie Slayer gameplay video" loading="lazy">
+                        <template>
+                            <video controls title="Zombie Slayer gameplay demo">
+                                <source src="../assets/video/Zombie_Slayer/ZombieSlayer.mp4" type="video/mp4">
+                                Your browser does not support the video element.
+                            </video>
+                        </template>
+                    </button>
+                </div>
+            </section>
+            <footer>
+                <p><a href="../index.html#projects">Return to all projects</a></p>
+            </footer>
+        </div>
+    </main>
+    <script src="../assets/js/johndoe.js" defer></script>
 </body>
 </html>
