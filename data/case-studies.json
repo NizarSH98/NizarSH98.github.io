@@ -1,0 +1,76 @@
+[
+  {
+    "slug": "smart-urban-oasis",
+    "title": "Smart Urban Oasis — AI Energy Optimization",
+    "role": "AI & Systems Engineer",
+    "problem": "High energy waste in public space operations.",
+    "solution": "Edge-sensed automation + CV human detection + smart control.",
+    "stack": ["Python", "ESP32", "YOLOv5", "MQTT", "Local dashboard"],
+    "impact": ["12.47 kWh/day saved", "24.25 kg CO₂/day reduced", "11.41% ROI"],
+    "links": [
+      {
+        "label": "Paper (ICECET 2025)",
+        "url": "[ADD PAPER LINK]"
+      }
+    ],
+    "media": [
+      {
+        "type": "video",
+        "src": "[ADD VIDEO LINK]"
+      }
+    ]
+  },
+  {
+    "slug": "rag-farmer-assistant",
+    "title": "RAG Farmer Assistant",
+    "role": "AI Engineer",
+    "problem": "Engineers lacked fast answers from large agronomic PDFs.",
+    "solution": "RAG over curated documents; Streamlit UI; OpenRouter LLMs.",
+    "stack": ["Python", "Streamlit", "PyPDF2", "vector search", "OpenRouter"],
+    "impact": ["Faster agronomy Q&A", "Field-tested with engineers"],
+    "links": [],
+    "media": [
+      {
+        "type": "video",
+        "src": "[ADD VIDEO LINK]"
+      }
+    ]
+  },
+  {
+    "slug": "ecostrider-hexapod",
+    "title": "EcoStrider — Autonomous Hexapod R&D",
+    "role": "Robotics/ML Engineer",
+    "problem": "Low-cost autonomous field inspection with soil/terrain awareness.",
+    "solution": "ESP32-S3 main, dual ESP32-CAM stereo, RTAB-Map SLAM, IMU, load-cell feet.",
+    "stack": ["ESP32-S3", "ESP32-CAM", "RTAB-Map", "WebSockets", "Micro-ROS (planned)"],
+    "impact": ["Stereo SLAM demo", "Terrain-aware gait R&D"],
+    "links": [
+      {
+        "label": "Repo",
+        "url": "[ADD REPO LINK]"
+      }
+    ],
+    "media": [
+      {
+        "type": "video",
+        "src": "[ADD VIDEO LINK]"
+      }
+    ]
+  },
+  {
+    "slug": "releaf-dashboard",
+    "title": "RELEAF — Farmer Sustainability Dashboard",
+    "role": "AI & Data Engineer",
+    "problem": "Need for farm-level insights for policy.",
+    "solution": "Data pipeline + visual analytics; >50 farms processed.",
+    "stack": ["Python", "Streamlit", "QGIS", "GDAL"],
+    "impact": [">50 farms analyzed", "Policy-oriented insights"],
+    "links": [],
+    "media": [
+      {
+        "type": "image",
+        "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc2MDAnIGhlaWdodD0nNDAwJyB2aWV3Qm94PScwIDAgNjAwIDQwMCc+PHJlY3Qgd2lkdGg9JzYwMCcgaGVpZ2h0PSc0MDAnIGZpbGw9JyNGM0Y0RjYnLz48dGV4dCB4PSc1MCUnIHk9JzUwJScgZG9taW5hbnQtYmFzZWxpbmU9J21pZGRsZScgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1mYW1pbHk9J0ludGVyLCBBcmlhbCwgc2Fucy1zZXJpZicgZm9udC1zaXplPScyNCcgZmlsbD0nIzZCNzI4MCc+UkVMRUFGIERhc2hib2FyZDwvdGV4dD48L3N2Zz4="
+      }
+    ]
+  }
+]
