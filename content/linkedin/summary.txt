@@ -1,0 +1,9 @@
+Headline: AI & Robotics Systems Engineer | SLAM • Edge AI/IoT • Applied ML for Sustainability
+
+About:
+I build AI and autonomous systems that go from research to field deployment—edge sensing, CV/SLAM, IoT, and data analytics.
+Recent wins include Urban Oasis energy savings (12.47 kWh/day, 24.25 kg CO₂/day, 11.41% ROI) and RELEAF dashboards spanning 50+ farms.
+Delivered RAG assistants, ESP32/MQTT automation, and EcoStrider hexapod SLAM prototypes with reproducible pipelines.
+Open to relocating across Gulf, EU, or China for robotics, geospatial AI, or sustainability-focused innovation teams.
+
+Keywords: SLAM; ESP32; RAG; YOLO; IoT/MQTT; QGIS; RTAB-Map; ROS2
