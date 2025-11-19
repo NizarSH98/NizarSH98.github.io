@@ -72,5 +72,37 @@
         "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc2MDAnIGhlaWdodD0nNDAwJyB2aWV3Qm94PScwIDAgNjAwIDQwMCc+PHJlY3Qgd2lkdGg9JzYwMCcgaGVpZ2h0PSc0MDAnIGZpbGw9JyNGM0Y0RjYnLz48dGV4dCB4PSc1MCUnIHk9JzUwJScgZG9taW5hbnQtYmFzZWxpbmU9J21pZGRsZScgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC1mYW1pbHk9J0ludGVyLCBBcmlhbCwgc2Fucy1zZXJpZicgZm9udC1zaXplPScyNCcgZmlsbD0nIzZCNzI4MCc+UkVMRUFGIERhc2hib2FyZDwvdGV4dD48L3N2Zz4="
       }
     ]
+  },
+  {
+    "slug": "smarttrace",
+    "title": "SmartTrace — Local Food Traceability",
+    "role": "Product & Systems Lead",
+    "problem": "Small producers lacked credible traceability to meet buyers’ audit requirements.",
+    "solution": "QR-enabled digital label that surfaces sourcing data, compliance notes, and cost estimators in one responsive web app.",
+    "stack": ["Vanilla JS", "JSON knowledge graph", "Static hosting", "QR generators"],
+    "impact": ["Gives cooperatives instant audit trail", "Helps market teams pitch with transparent data"],
+    "links": [
+      {
+        "label": "Visit SmartTrace",
+        "url": "https://esduaub2025.github.io/SmartTrace/estimator.html"
+      }
+    ],
+    "media": []
+  },
+  {
+    "slug": "visionframe-saas",
+    "title": "VisionFrame — Video-to-Model SaaS",
+    "role": "Founder / Tech Lead",
+    "problem": "Teams with little ML experience struggle to convert video into high-quality datasets for computer vision.",
+    "solution": "Cloud-native service that ingests video, breaks it into frames, lets teams annotate boxes + labels collaboratively, and outputs training-ready datasets.",
+    "stack": ["FastAPI", "Celery", "React", "Render", "S3-compatible storage"],
+    "impact": ["Reduces data prep hours", "Opens CV dataset creation to non-experts"],
+    "links": [
+      {
+        "label": "Launch VisionFrame",
+        "url": "https://od-saas.onrender.com"
+      }
+    ],
+    "media": []
   }
 ]
