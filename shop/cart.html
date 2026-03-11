@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cart · Nizar Storefront</title>
+  <link rel="stylesheet" href="../assets/css/shop.css">
+  <script src="../assets/js/shop.js" defer></script>
+</head>
+<body class="shop-page">
+  <div data-shop-header-slot></div>
+  <main class="collection-main" data-cart-page>
+    <div class="shop-container">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="./collection.html">Shop</a><span>/</span><span aria-current="page">Cart</span></nav>
+      <section class="page-panel">
+        <h1>Your cart</h1>
+        <div data-cart-page-items></div>
+        <div class="cart-summary">
+          <p>Subtotal <strong data-cart-page-summary>$0</strong></p>
+          <div class="shipping-progress">
+            <p data-shipping-message>Add items to unlock free delivery.</p>
+            <div class="shipping-progress__bar"><span data-shipping-progress-bar></span></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <div data-shop-footer-slot></div>
+</body>
+</html>

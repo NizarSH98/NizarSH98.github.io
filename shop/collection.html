@@ -13,44 +13,7 @@
 </head>
 <body class="shop-page">
   <a class="shop-skip-link" href="#collection-main">Skip to products</a>
-
-  <div class="announcement-bar" data-countdown data-countdown-deadline="2026-01-15T23:59:59Z">
-    <div class="shop-container announcement-bar__inner">
-      <p>Spring offers end in <strong data-countdown-value>--:--:--</strong></p>
-      <a href="#collection-main">Shop now</a>
-    </div>
-  </div>
-
-  <header class="shop-header">
-    <div class="shop-container shop-header__inner">
-      <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-drawer">Menu</button>
-      <a class="shop-brand" href="../index.html">Nizar Store</a>
-      <nav class="shop-nav" aria-label="Primary">
-        <a href="./collection.html">Shop</a>
-        <a href="./rewards.html">Rewards</a>
-        <a href="./contact.html">Promotions</a>
-      </nav>
-      <div class="shop-actions">
-        <a href="./contact.html">Login</a>
-        <a href="#" aria-label="Cart">Cart (0)</a>
-      </div>
-    </div>
-  </header>
-
-  <aside id="mobile-drawer" class="mobile-drawer" data-mobile-drawer aria-hidden="true">
-    <div class="mobile-drawer__panel">
-      <div class="mobile-drawer__head">
-        <strong>Browse Categories</strong>
-        <button type="button" data-menu-close aria-label="Close menu">✕</button>
-      </div>
-      <nav class="mobile-drawer__nav" aria-label="Category navigation" data-category-nav></nav>
-      <div class="mobile-drawer__links">
-        <a href="./collection.html">Shop All</a>
-        <a href="./rewards.html">Rewards</a>
-        <a href="./contact.html">Contact</a>
-      </div>
-    </div>
-  </aside>
+  <div data-shop-header-slot></div>
 
   <main id="collection-main" class="collection-main">
     <div class="shop-container">
@@ -122,7 +85,14 @@
           <nav class="pagination" aria-label="Product pagination" data-pagination></nav>
         </div>
       </section>
+
+      <section class="page-panel" style="margin-top:1rem" aria-labelledby="recently-viewed-title">
+        <h2 id="recently-viewed-title">Recently viewed</h2>
+        <div data-recently-viewed></div>
+      </section>
     </div>
   </main>
+
+  <div data-shop-footer-slot></div>
 </body>
 </html>

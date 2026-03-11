@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product · Nizar Storefront</title>
+  <link rel="stylesheet" href="../assets/css/shop.css">
+  <script src="../assets/js/shop.js" defer></script>
+</head>
+<body class="shop-page">
+  <div data-shop-header-slot></div>
+  <main class="collection-main" data-product-page>
+    <div class="shop-container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a><span>/</span><a href="./collection.html">Shop</a><span>/</span><span aria-current="page">Product</span>
+      </nav>
+      <section class="page-panel" data-product-slot></section>
+      <section class="page-panel" style="margin-top:1rem" aria-labelledby="recently-viewed-title">
+        <h2 id="recently-viewed-title">Recently viewed</h2>
+        <div data-recently-viewed></div>
+      </section>
+    </div>
+  </main>
+  <div data-shop-footer-slot></div>
+</body>
+</html>
