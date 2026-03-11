@@ -1,0 +1,60 @@
+[
+  {
+    "label": "Shop All",
+    "slug": "all",
+    "children": []
+  },
+  {
+    "label": "Skincare",
+    "slug": "skincare",
+    "children": [
+      {
+        "label": "Cleansers",
+        "slug": "cleansers",
+        "children": []
+      },
+      {
+        "label": "Serums",
+        "slug": "serums",
+        "children": []
+      },
+      {
+        "label": "Moisturizers",
+        "slug": "moisturizers",
+        "children": []
+      }
+    ]
+  },
+  {
+    "label": "Body",
+    "slug": "body",
+    "children": [
+      {
+        "label": "Body Wash",
+        "slug": "body-wash",
+        "children": []
+      },
+      {
+        "label": "Body Lotion",
+        "slug": "body-lotion",
+        "children": []
+      }
+    ]
+  },
+  {
+    "label": "Wellness",
+    "slug": "wellness",
+    "children": [
+      {
+        "label": "Sleep",
+        "slug": "sleep",
+        "children": []
+      },
+      {
+        "label": "Recovery",
+        "slug": "recovery",
+        "children": []
+      }
+    ]
+  }
+]
