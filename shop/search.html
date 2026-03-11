@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search · Nizar Storefront</title>
+  <link rel="stylesheet" href="../assets/css/shop.css">
+  <script src="../assets/js/shop.js" defer></script>
+</head>
+<body class="shop-page">
+  <div data-shop-header-slot></div>
+  <main class="collection-main" data-search-page>
+    <div class="shop-container">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><span aria-current="page">Search</span></nav>
+      <section class="page-panel">
+        <h1>Search products</h1>
+        <p class="page-lead">Find items by name, brand, or short description.</p>
+        <input class="search-input" type="search" placeholder="Search products" data-search-input>
+      </section>
+      <section class="page-panel" style="margin-top:1rem">
+        <div class="product-grid" data-search-results></div>
+      </section>
+    </div>
+  </main>
+  <div data-shop-footer-slot></div>
+</body>
+</html>
