@@ -1,0 +1,138 @@
+[
+  {
+    "id": "serum-c-01",
+    "title": "Vitamin C Radiance Serum",
+    "brand": "North Bloom",
+    "category": "serums",
+    "price": 28,
+    "compareAtPrice": 35,
+    "stock": 24,
+    "description": "Brightening daily serum with stable vitamin C and niacinamide.",
+    "image": "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=80",
+    "hasVariants": false
+  },
+  {
+    "id": "clean-gel-01",
+    "title": "Daily Reset Gel Cleanser",
+    "brand": "North Bloom",
+    "category": "cleansers",
+    "price": 19,
+    "compareAtPrice": null,
+    "stock": 8,
+    "description": "Low-foam cleanser that removes SPF and impurities without stripping.",
+    "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80",
+    "hasVariants": false
+  },
+  {
+    "id": "night-cream-01",
+    "title": "Overnight Barrier Cream",
+    "brand": "Atelier Skin",
+    "category": "moisturizers",
+    "price": 32,
+    "compareAtPrice": 40,
+    "stock": 0,
+    "description": "Ceramide-rich cream designed to restore skin comfort overnight.",
+    "image": "https://images.unsplash.com/photo-1629198724822-4f82f7a4d084?auto=format&fit=crop&w=800&q=80",
+    "hasVariants": true,
+    "variants": [
+      { "name": "50ml", "price": 32, "stock": 0 },
+      { "name": "100ml", "price": 54, "stock": 0 }
+    ]
+  },
+  {
+    "id": "body-lotion-01",
+    "title": "Shea Soft Body Lotion",
+    "brand": "Elm Ritual",
+    "category": "body-lotion",
+    "price": 22,
+    "compareAtPrice": 27,
+    "stock": 3,
+    "description": "Fast-absorbing lotion with shea and oat lipids.",
+    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80",
+    "hasVariants": false
+  },
+  {
+    "id": "body-wash-01",
+    "title": "Comfort Body Wash",
+    "brand": "Elm Ritual",
+    "category": "body-wash",
+    "price": 18,
+    "compareAtPrice": null,
+    "stock": 18,
+    "description": "Sulfate-free wash with a gentle botanical scent.",
+    "image": "https://images.unsplash.com/photo-1612532275214-e4ca76d0e4d1?auto=format&fit=crop&w=800&q=80",
+    "hasVariants": true,
+    "variants": [
+      { "name": "250ml", "price": 18, "stock": 10 },
+      { "name": "500ml", "price": 30, "stock": 8 }
+    ]
+  },
+  {
+    "id": "sleep-mist-01",
+    "title": "Wind Down Sleep Mist",
+    "brand": "Quiet Field",
+    "category": "sleep",
+    "price": 24,
+    "compareAtPrice": 29,
+    "stock": 2,
+    "description": "Lavender-forward pillow and room mist for evening routines.",
+    "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80",
+    "hasVariants": false
+  },
+  {
+    "id": "recovery-balm-01",
+    "title": "Recovery Muscle Balm",
+    "brand": "Quiet Field",
+    "category": "recovery",
+    "price": 26,
+    "compareAtPrice": null,
+    "stock": 15,
+    "description": "Cooling botanical balm for post-workout relief.",
+    "image": "https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=800&q=80",
+    "hasVariants": true,
+    "variants": [
+      { "name": "Standard", "price": 26, "stock": 15 },
+      { "name": "Travel", "price": 14, "stock": 20 }
+    ]
+  },
+  {
+    "id": "hydration-essence-01",
+    "title": "Hydration Layering Essence",
+    "brand": "Atelier Skin",
+    "category": "serums",
+    "price": 30,
+    "compareAtPrice": 36,
+    "stock": 6,
+    "description": "Weightless humectant-rich essence for dehydrated skin.",
+    "image": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80",
+    "hasVariants": false
+  },
+  {
+    "id": "spf-fluid-01",
+    "title": "Mineral Daily SPF Fluid",
+    "brand": "North Bloom",
+    "category": "moisturizers",
+    "price": 27,
+    "compareAtPrice": null,
+    "stock": 11,
+    "description": "Sheer zinc SPF for everyday city wear.",
+    "image": "https://images.unsplash.com/photo-1556228852-5da4e26f56bf?auto=format&fit=crop&w=800&q=80",
+    "hasVariants": false
+  },
+  {
+    "id": "clean-balm-01",
+    "title": "Melt & Clean Balm",
+    "brand": "Atelier Skin",
+    "category": "cleansers",
+    "price": 25,
+    "compareAtPrice": 31,
+    "stock": 4,
+    "description": "First cleanse balm that melts makeup and waterproof SPF.",
+    "image": "https://images.unsplash.com/photo-1599305090598-fe179d501227?auto=format&fit=crop&w=800&q=80",
+    "hasVariants": true,
+    "variants": [
+      { "name": "Jar", "price": 25, "stock": 4 },
+      { "name": "Refill", "price": 20, "stock": 0 }
+    ]
+  }
+]

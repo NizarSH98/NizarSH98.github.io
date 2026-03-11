@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Collection · Nizar Storefront</title>
+  <meta name="description" content="Collection page with filtering, sorting, and paginated product browsing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/shop.css">
+  <script src="../assets/js/shop.js" defer></script>
+</head>
+<body class="shop-page">
+  <a class="shop-skip-link" href="#collection-main">Skip to products</a>
+
+  <div class="announcement-bar" data-countdown data-countdown-deadline="2026-01-15T23:59:59Z">
+    <div class="shop-container announcement-bar__inner">
+      <p>Spring offers end in <strong data-countdown-value>--:--:--</strong></p>
+      <a href="#collection-main">Shop now</a>
+    </div>
+  </div>
+
+  <header class="shop-header">
+    <div class="shop-container shop-header__inner">
+      <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-drawer">Menu</button>
+      <a class="shop-brand" href="../index.html">Nizar Store</a>
+      <nav class="shop-nav" aria-label="Primary">
+        <a href="./collection.html">Shop</a>
+        <a href="./rewards.html">Rewards</a>
+        <a href="./contact.html">Promotions</a>
+      </nav>
+      <div class="shop-actions">
+        <a href="./contact.html">Login</a>
+        <a href="#" aria-label="Cart">Cart (0)</a>
+      </div>
+    </div>
+  </header>
+
+  <aside id="mobile-drawer" class="mobile-drawer" data-mobile-drawer aria-hidden="true">
+    <div class="mobile-drawer__panel">
+      <div class="mobile-drawer__head">
+        <strong>Browse Categories</strong>
+        <button type="button" data-menu-close aria-label="Close menu">✕</button>
+      </div>
+      <nav class="mobile-drawer__nav" aria-label="Category navigation" data-category-nav></nav>
+      <div class="mobile-drawer__links">
+        <a href="./collection.html">Shop All</a>
+        <a href="./rewards.html">Rewards</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+  </aside>
+
+  <main id="collection-main" class="collection-main">
+    <div class="shop-container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <a href="./collection.html">Shop</a>
+        <span>/</span>
+        <span aria-current="page">Collection</span>
+      </nav>
+
+      <section class="collection-heading">
+        <h1>All Products</h1>
+        <p>Curated essentials with filtering, sorting, and quick cart-ready actions.</p>
+      </section>
+
+      <section class="collection-layout" data-collection-app>
+        <aside class="collection-sidebar" aria-label="Product filters">
+          <div class="filter-group" data-accordion>
+            <button class="filter-group__toggle" type="button" aria-expanded="true">Availability</button>
+            <div class="filter-group__body">
+              <label><input type="checkbox" name="availability" value="in-stock"> In stock</label>
+              <label><input type="checkbox" name="availability" value="low-stock"> Low stock</label>
+              <label><input type="checkbox" name="availability" value="sold-out"> Sold out</label>
+            </div>
+          </div>
+
+          <div class="filter-group" data-accordion>
+            <button class="filter-group__toggle" type="button" aria-expanded="true">Price range</button>
+            <div class="filter-group__body">
+              <div class="price-range">
+                <label for="price-min">Min</label>
+                <input id="price-min" type="number" min="0" step="1" value="0" data-price-min>
+                <label for="price-max">Max</label>
+                <input id="price-max" type="number" min="0" step="1" value="80" data-price-max>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-group" data-accordion>
+            <button class="filter-group__toggle" type="button" aria-expanded="true">Brand</button>
+            <div class="filter-group__body" data-brand-filters></div>
+          </div>
+
+          <button class="btn-reset" type="button" data-reset-filters>Reset filters</button>
+        </aside>
+
+        <div class="collection-content">
+          <div class="collection-toolbar">
+            <p class="collection-count" data-results-count>0 products</p>
+            <div class="toolbar-controls">
+              <label>
+                Sort
+                <select data-sort>
+                  <option value="featured">Featured</option>
+                  <option value="price-asc">Price: Low to high</option>
+                  <option value="price-desc">Price: High to low</option>
+                  <option value="title-asc">Title: A-Z</option>
+                </select>
+              </label>
+              <div class="view-toggle" role="group" aria-label="View">
+                <button type="button" class="is-active" data-view="grid">Grid</button>
+                <button type="button" data-view="list">List</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-grid" data-product-grid></div>
+          <nav class="pagination" aria-label="Product pagination" data-pagination></nav>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
