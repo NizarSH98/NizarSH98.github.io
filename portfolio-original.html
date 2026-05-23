@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of AI and robotics engineer Nizar Shehayeb featuring autonomous robotics, energy automation, and agricultural AI deployments.">
+    <meta name="author" content="Nizar Shehayeb">
+    <title>Nizar Shehayeb · AI Engineer & Robotics Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <script src="assets/js/portfolio.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header" id="top">
+        <div class="nav-wrapper">
+            <div class="container nav-container">
+                <a class="brand" href="#top" aria-label="Nizar Shehayeb home">Nizar Shehayeb</a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="nav-toggle__bar"></span>
+                </button>
+                <nav class="primary-nav" id="primary-navigation" aria-label="Primary">
+                    <ul>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#publications">Publications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="container hero__layout">
+                <div class="hero__content">
+                    <p class="hero__eyebrow">AI Engineer • Robotics Developer • Smart Systems Innovator</p>
+                    <h1 class="hero__title">I build intelligent systems that merge AI, robotics, and real-world sensing.</h1>
+                    <p class="hero__subtitle">From autonomous hexapods to live energy-saving automation, traceable food supply chains, and SaaS platforms that turn raw video into vision datasets, I deliver production-grade systems with measurable impact.</p>
+                    <div class="hero__actions">
+                        <a class="btn btn-primary" href="HTMLResume/resume.html" target="_blank" rel="noopener">View Resume</a>
+                        <a class="btn btn-secondary" href="https://github.com/NizarSH98" target="_blank" rel="noopener">View GitHub</a>
+                        <a class="btn btn-outline" href="mailto:jabernizar98@gmail.com">Contact Me</a>
+                        <a class="btn btn-outline" href="shop/collection.html">Storefront Demo</a>
+                    </div>
+                </div>
+                <div class="hero__visual" aria-hidden="true">
+                    <div class="orb orb--one"></div>
+                    <div class="orb orb--two"></div>
+                    <div class="hero__card">
+                        <p>Deployed systems across robotics, energy automation, and agricultural AI — all shipping to real users.</p>
+                        <div class="hero__badge">Field-Tested Engineering</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <section class="section summary">
+            <div class="container narrow">
+                <blockquote class="summary__quote">
+                    <p>I’m an AI &amp; Robotics Engineer with full-stack capability across vision models, embedded systems, autonomous robotics, IoT, SLAM, energy automation, and production-ready AI applications.</p>
+                    <p>I specialize in building <strong>fully working, deployed systems</strong> that combine hardware, AI models, cloud infrastructure, and human-centered interfaces—while leading cross-functional partners, aligning stakeholders, and translating messy requirements into clear roadmaps.</p>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Signature Projects</span>
+                    <h2 id="projects-title">High-impact systems trusted by researchers, farmers, and city builders</h2>
+                </div>
+                <div class="project-grid project-grid--spotlight">
+                    <article class="project-card project-card--spotlight">
+                        <div class="project-card__tag">Flagship Robotics</div>
+                        <h3>EcoStrider Autonomous Hexapod Robot</h3>
+                        <p class="project-card__summary">A fully custom autonomous hexapod using ESP32-S3 + dual ESP32-CAM stereo vision + ROS2 SLAM + load-cell feet.</p>
+                        <div class="project-card__columns">
+                            <div>
+                                <h4>My contributions</h4>
+                                <ul>
+                                    <li>Designed the entire control architecture (servo drivers, gait engine, IK framework).</li>
+                                    <li>Built real-time telemetry using WebSockets + Micro-ROS.</li>
+                                    <li>Implemented stereo-vision SLAM with RTAB-Map.</li>
+                                    <li>Designed reinforcement learning pipeline for balance + terrain-aware locomotion.</li>
+                                    <li>Integrated soil/plant monitoring tools for precision agriculture.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>Skills demonstrated</h4>
+                                <p>Robotics, SLAM, IK, embedded systems, Python, C++, ROS 2, real-time comms, AI perception.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card project-card--spotlight">
+                        <div class="project-card__tag">Deployed Energy AI</div>
+                        <h3>Smart Urban Oasis — AI Energy Efficiency System (Deployed at AUB)</h3>
+                        <p class="project-card__summary">AI- and IoT-based system deployed in a real living-lab garden.</p>
+                        <div class="project-card__stats">
+                            <div><span>12.47</span>kWh/day saved</div>
+                            <div><span>24.25</span>kg CO₂/day reduction</div>
+                            <div><span>11.41%</span>annual ROI</div>
+                        </div>
+                        <div class="project-card__columns">
+                            <div>
+                                <h4>My contributions</h4>
+                                <ul>
+                                    <li>Built YOLOv5 presence detection system.</li>
+                                    <li>Integrated ESP32 sensor mesh.</li>
+                                    <li>Designed automation logic + local dashboard.</li>
+                                    <li>Co-authored the research paper accepted at ICECET 2025.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>Skills demonstrated</h4>
+                                <p>AI vision, IoT design, dashboards, real deployment, research output.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card project-card--spotlight">
+                        <div class="project-card__tag">Agritech Platform</div>
+                        <h3>RELEAF Farmer Dashboard &amp; Agricultural AI Tools</h3>
+                        <p class="project-card__summary">A multi-module AI dashboard powering sustainable agriculture in Lebanon.</p>
+                        <div class="project-card__columns">
+                            <div>
+                                <h4>Features I built</h4>
+                                <ul>
+                                    <li>Crop disease detection.</li>
+                                    <li>Yield prediction model.</li>
+                                    <li>Market forecasting.</li>
+                                    <li>RAG chatbot for agricultural Q&amp;A.</li>
+                                    <li>Data visualization from 50+ farms.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>Showcased at</h4>
+                                <ul>
+                                    <li>UNESCO Arab Forum 2025.</li>
+                                    <li>Lebanon National AI Summit 2025.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card project-card--compact">
+                        <div class="project-card__tag">Conversational AI</div>
+                        <h3>RAG Chatbot for Lebanese Farmers</h3>
+                        <p class="project-card__summary">Retrieval-Augmented Generation system using curated PDFs + embeddings + custom prompt pipeline.</p>
+                        <p class="project-card__tech">Tech: Streamlit, PyPDF2, scikit-learn, OpenRouter, vector search.</p>
+                    </article>
+                </div>
+
+                <div class="subsection-heading">
+                    <h3>Deployed Web &amp; SaaS Products</h3>
+                    <p>Full-stack launches that fuse data strategy, interaction design, and resilient infrastructure.</p>
+                </div>
+                <div class="project-grid project-grid--web">
+                    <article class="web-card">
+                        <div class="web-card__media web-card__media--green" role="presentation"></div>
+                        <div class="web-card__content">
+                            <h4>SmartTrace — Local Food Traceability PoC</h4>
+                            <p>Built a QR-enabled audit trail for small producers, combining supply-chain data modeling, on-device QR generation, and a responsive estimator so buyers can verify provenance instantly.</p>
+                            <ul>
+                                <li>Stack: vanilla JS, JSON datasets, Netlify functions.</li>
+                                <li>Skills: product discovery with farmers, UX writing, compliance storytelling.</li>
+                            </ul>
+                            <a class="btn-link" href="https://esduaub2025.github.io/SmartTrace/estimator.html" target="_blank" rel="noopener">Visit SmartTrace</a>
+                        </div>
+                    </article>
+                    <article class="web-card">
+                        <div class="web-card__media" role="presentation"></div>
+                        <div class="web-card__content">
+                            <h4>VisionFrame SaaS — Video-to-Dataset Pipeline</h4>
+                            <p>A cloud platform that ingests video, slices it into frames, and layers annotation tools for boundary boxes + labels so non-ML teams can produce custom CV datasets.</p>
+                            <ul>
+                                <li>Stack: FastAPI + Celery workers, S3-compatible storage, React/TypeScript workspace.</li>
+                                <li>Skills: product ops, user onboarding flows, dataset QA, MLOps roadmap.</li>
+                            </ul>
+                            <a class="btn-link" href="https://od-saas.onrender.com" target="_blank" rel="noopener">Launch VisionFrame</a>
+                        </div>
+                    </article>
+                    <article class="web-card">
+                        <div class="web-card__media" role="presentation"></div>
+                        <div class="web-card__content">
+                            <h4>ESDU 25-Year Anniversary Story</h4>
+                            <p>Full-stack microsite celebrating 25 years of community impact with custom animations, interactive timelines, and tailored narratives for donors and youth.</p>
+                            <a class="btn-link" href="https://esduaub2025.github.io/ESDU_25" target="_blank" rel="noopener">Visit Site</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experience" aria-labelledby="experience-title">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Professional Experience</span>
+                    <h2 id="experience-title">AI &amp; Smart Systems Engineer — ESDU, American University of Beirut</h2>
+                </div>
+                <article class="experience-card">
+                    <ul>
+                        <li>Designed and built autonomous robotics systems (EcoStrider hexapod).</li>
+                        <li>Led AI integration for energy management, published in peer-reviewed research.</li>
+                        <li>Developed agricultural AI dashboards and tools used in national and regional events.</li>
+                        <li>Built IoT sensor networks with ESP32, LoRa, solar systems, and MQTT pipelines.</li>
+                        <li>Created multiple production-ready AI applications (RAG bots, dashboards, automation).</li>
+                        <li>Supported ESDU’s AI strategy as a member of the AI integration committee.</li>
+                        <li>Delivered workshops and presentations for students, NGOs, and international events.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Technical Skills</span>
+                    <h2 id="skills-title">Deep specialization across AI, robotics, and embedded systems</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skills-group">
+                        <h3>AI / ML</h3>
+                        <p>Deep Learning, CNNs, YOLO, Transformers, RAG, embeddings</p>
+                    </div>
+                    <div class="skills-group">
+                        <h3>Robotics</h3>
+                        <p>ROS 2, SLAM (RTAB-Map), IK, reinforcement learning, servo control</p>
+                    </div>
+                    <div class="skills-group">
+                        <h3>Embedded</h3>
+                        <p>ESP32, LoRa, IMUs, load cells, IoT, MQTT, real-time systems</p>
+                    </div>
+                    <div class="skills-group">
+                        <h3>Software</h3>
+                        <p>Python, C++, JS, Node.js, Flask, FastAPI</p>
+                    </div>
+                    <div class="skills-group">
+                        <h3>Tools</h3>
+                        <p>GitHub, Docker, Streamlit, OpenRouter, Cursor, n8n, Jupyter</p>
+                    </div>
+                    <div class="skills-group">
+                        <h3>Other</h3>
+                        <p>Solar systems, hardware integration, data visualization, dashboards</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="publications" aria-labelledby="publications-title">
+            <div class="container narrow">
+                <div class="section-heading">
+                    <span class="eyebrow">Publications &amp; Talks</span>
+                    <h2 id="publications-title">Thought leadership grounded in real deployments</h2>
+                </div>
+                <ul class="list-highlight">
+                    <li><em>Assessing the Potential of AI Integration for Energy Management in Lebanon</em> — ICECET 2025</li>
+                    <li>Presentation — UNESCO Arab Forum for Cooperation in Science</li>
+                    <li>Presentation — Lebanon National AI Summit 2025</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section section--accent" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="contact-card">
+                    <div class="contact-card__intro">
+                        <span class="eyebrow">Contact</span>
+                        <h2 id="contact-title">Let’s build the next generation of intelligent systems</h2>
+                        <p>Whether you need robotics R&amp;D, AI deployment, or full-stack automation, I’ll deliver systems that ship and endure.</p>
+                    </div>
+                    <div class="contact-card__links">
+                        <a class="contact-link" href="mailto:jabernizar98@gmail.com">jabernizar98@gmail.com</a>
+                        <a class="contact-link" href="https://www.linkedin.com/in/nizarshehayeb" target="_blank" rel="noopener">LinkedIn</a>
+                        <a class="contact-link" href="https://github.com/NizarSH98" target="_blank" rel="noopener">GitHub</a>
+                        <a class="contact-link" href="HTMLResume/resume.html" target="_blank" rel="noopener">View CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="current-year"></span> Nizar Shehayeb. Building intelligent systems for a measurable future.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,293 +1,667 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio of AI and robotics engineer Nizar Shehayeb featuring autonomous robotics, energy automation, and agricultural AI deployments.">
-    <meta name="author" content="Nizar Shehayeb">
-    <title>Nizar Shehayeb · AI Engineer & Robotics Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/portfolio.css">
-    <script src="assets/js/portfolio.js" defer></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nizar Shehayeb — AI · Robotics · Systems</title>
+<meta name="description" content="AI Engineer, Robotics Developer, and Systems Architect at ESDU, American University of Beirut." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css" />
 </head>
+
 <body>
-    <a class="skip-link" href="#main">Skip to main content</a>
-    <header class="site-header" id="top">
-        <div class="nav-wrapper">
-            <div class="container nav-container">
-                <a class="brand" href="#top" aria-label="Nizar Shehayeb home">Nizar Shehayeb</a>
-                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="nav-toggle__bar"></span>
-                </button>
-                <nav class="primary-nav" id="primary-navigation" aria-label="Primary">
-                    <ul>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#publications">Publications</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+
+<!-- Global overlays -->
+<div class="grain" aria-hidden="true"></div>
+<div class="blueprint-grid" aria-hidden="true"></div>
+
+<!-- ─────────── NAV ─────────── -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <span class="dot"></span>
+      <span>NIZAR SHEHAYEB</span>
+      <span style="color: var(--ink-3); margin-left: 8px;">— AI · ROBOTICS</span>
+    </div>
+    <div class="nav-links">
+      <a href="#projects"><span class="num">03</span>Projects</a>
+      <a href="#bento"><span class="num">04</span>Capabilities</a>
+      <a href="#exp"><span class="num">05</span>Field Record</a>
+      <a href="#pubs"><span class="num">06</span>Output</a>
+      <a href="#contact"><span class="num">07</span>Connect</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- ─────────── 01 — HERO ─────────── -->
+<section class="hero" id="hero">
+  <!-- Animated shader -->
+  <div class="hero-shader" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+  <!-- Faint circuit texture -->
+  <div class="hero-circuit-bg" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-toplabel">
+          <span class="brackets">[</span>
+          <span class="label">BEIRUT, LEBANON · ESDU, AUB</span>
+          <span class="brackets">]</span>
         </div>
-        <div class="hero">
-            <div class="container hero__layout">
-                <div class="hero__content">
-                    <p class="hero__eyebrow">AI Engineer • Robotics Developer • Smart Systems Innovator</p>
-                    <h1 class="hero__title">I build intelligent systems that merge AI, robotics, and real-world sensing.</h1>
-                    <p class="hero__subtitle">From autonomous hexapods to live energy-saving automation, traceable food supply chains, and SaaS platforms that turn raw video into vision datasets, I deliver production-grade systems with measurable impact.</p>
-                    <div class="hero__actions">
-                        <a class="btn btn-primary" href="HTMLResume/resume.html" target="_blank" rel="noopener">View Resume</a>
-                        <a class="btn btn-secondary" href="https://github.com/NizarSH98" target="_blank" rel="noopener">View GitHub</a>
-                        <a class="btn btn-outline" href="mailto:jabernizar98@gmail.com">Contact Me</a>
-                        <a class="btn btn-outline" href="shop/collection.html">Storefront Demo</a>
-                    </div>
-                </div>
-                <div class="hero__visual" aria-hidden="true">
-                    <div class="orb orb--one"></div>
-                    <div class="orb orb--two"></div>
-                    <div class="hero__card">
-                        <p>Deployed systems across robotics, energy automation, and agricultural AI — all shipping to real users.</p>
-                        <div class="hero__badge">Field-Tested Engineering</div>
-                    </div>
-                </div>
-            </div>
+
+        <h1 class="hero-name">
+          <span class="nizar">NIZAR</span>
+          <span class="surname">SHEHAYEB</span>
+        </h1>
+
+        <div class="hero-tw">
+          <span class="arrow">↳</span>
+          <span class="target" id="typewriter">AI Systems Engineer</span><span class="cursor"></span>
         </div>
-    </header>
-    <main id="main">
-        <section class="section summary">
-            <div class="container narrow">
-                <blockquote class="summary__quote">
-                    <p>I’m an AI &amp; Robotics Engineer with full-stack capability across vision models, embedded systems, autonomous robotics, IoT, SLAM, energy automation, and production-ready AI applications.</p>
-                    <p>I specialize in building <strong>fully working, deployed systems</strong> that combine hardware, AI models, cloud infrastructure, and human-centered interfaces—while leading cross-functional partners, aligning stakeholders, and translating messy requirements into clear roadmaps.</p>
-                </blockquote>
-            </div>
-        </section>
 
-        <section class="section" id="projects" aria-labelledby="projects-title">
-            <div class="container">
-                <div class="section-heading">
-                    <span class="eyebrow">Signature Projects</span>
-                    <h2 id="projects-title">High-impact systems trusted by researchers, farmers, and city builders</h2>
-                </div>
-                <div class="project-grid project-grid--spotlight">
-                    <article class="project-card project-card--spotlight">
-                        <div class="project-card__tag">Flagship Robotics</div>
-                        <h3>EcoStrider Autonomous Hexapod Robot</h3>
-                        <p class="project-card__summary">A fully custom autonomous hexapod using ESP32-S3 + dual ESP32-CAM stereo vision + ROS2 SLAM + load-cell feet.</p>
-                        <div class="project-card__columns">
-                            <div>
-                                <h4>My contributions</h4>
-                                <ul>
-                                    <li>Designed the entire control architecture (servo drivers, gait engine, IK framework).</li>
-                                    <li>Built real-time telemetry using WebSockets + Micro-ROS.</li>
-                                    <li>Implemented stereo-vision SLAM with RTAB-Map.</li>
-                                    <li>Designed reinforcement learning pipeline for balance + terrain-aware locomotion.</li>
-                                    <li>Integrated soil/plant monitoring tools for precision agriculture.</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4>Skills demonstrated</h4>
-                                <p>Robotics, SLAM, IK, embedded systems, Python, C++, ROS 2, real-time comms, AI perception.</p>
-                            </div>
-                        </div>
-                    </article>
+        <p class="hero-bio">
+          I build production-grade intelligent systems — deployed across robotics, sustainable agriculture, and AI infrastructure in Lebanon and the Arab region.
+        </p>
 
-                    <article class="project-card project-card--spotlight">
-                        <div class="project-card__tag">Deployed Energy AI</div>
-                        <h3>Smart Urban Oasis — AI Energy Efficiency System (Deployed at AUB)</h3>
-                        <p class="project-card__summary">AI- and IoT-based system deployed in a real living-lab garden.</p>
-                        <div class="project-card__stats">
-                            <div><span>12.47</span>kWh/day saved</div>
-                            <div><span>24.25</span>kg CO₂/day reduction</div>
-                            <div><span>11.41%</span>annual ROI</div>
-                        </div>
-                        <div class="project-card__columns">
-                            <div>
-                                <h4>My contributions</h4>
-                                <ul>
-                                    <li>Built YOLOv5 presence detection system.</li>
-                                    <li>Integrated ESP32 sensor mesh.</li>
-                                    <li>Designed automation logic + local dashboard.</li>
-                                    <li>Co-authored the research paper accepted at ICECET 2025.</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4>Skills demonstrated</h4>
-                                <p>AI vision, IoT design, dashboards, real deployment, research output.</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card project-card--spotlight">
-                        <div class="project-card__tag">Agritech Platform</div>
-                        <h3>RELEAF Farmer Dashboard &amp; Agricultural AI Tools</h3>
-                        <p class="project-card__summary">A multi-module AI dashboard powering sustainable agriculture in Lebanon.</p>
-                        <div class="project-card__columns">
-                            <div>
-                                <h4>Features I built</h4>
-                                <ul>
-                                    <li>Crop disease detection.</li>
-                                    <li>Yield prediction model.</li>
-                                    <li>Market forecasting.</li>
-                                    <li>RAG chatbot for agricultural Q&amp;A.</li>
-                                    <li>Data visualization from 50+ farms.</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4>Showcased at</h4>
-                                <ul>
-                                    <li>UNESCO Arab Forum 2025.</li>
-                                    <li>Lebanon National AI Summit 2025.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card project-card--compact">
-                        <div class="project-card__tag">Conversational AI</div>
-                        <h3>RAG Chatbot for Lebanese Farmers</h3>
-                        <p class="project-card__summary">Retrieval-Augmented Generation system using curated PDFs + embeddings + custom prompt pipeline.</p>
-                        <p class="project-card__tech">Tech: Streamlit, PyPDF2, scikit-learn, OpenRouter, vector search.</p>
-                    </article>
-                </div>
-
-                <div class="subsection-heading">
-                    <h3>Deployed Web &amp; SaaS Products</h3>
-                    <p>Full-stack launches that fuse data strategy, interaction design, and resilient infrastructure.</p>
-                </div>
-                <div class="project-grid project-grid--web">
-                    <article class="web-card">
-                        <div class="web-card__media web-card__media--green" role="presentation"></div>
-                        <div class="web-card__content">
-                            <h4>SmartTrace — Local Food Traceability PoC</h4>
-                            <p>Built a QR-enabled audit trail for small producers, combining supply-chain data modeling, on-device QR generation, and a responsive estimator so buyers can verify provenance instantly.</p>
-                            <ul>
-                                <li>Stack: vanilla JS, JSON datasets, Netlify functions.</li>
-                                <li>Skills: product discovery with farmers, UX writing, compliance storytelling.</li>
-                            </ul>
-                            <a class="btn-link" href="https://esduaub2025.github.io/SmartTrace/estimator.html" target="_blank" rel="noopener">Visit SmartTrace</a>
-                        </div>
-                    </article>
-                    <article class="web-card">
-                        <div class="web-card__media" role="presentation"></div>
-                        <div class="web-card__content">
-                            <h4>VisionFrame SaaS — Video-to-Dataset Pipeline</h4>
-                            <p>A cloud platform that ingests video, slices it into frames, and layers annotation tools for boundary boxes + labels so non-ML teams can produce custom CV datasets.</p>
-                            <ul>
-                                <li>Stack: FastAPI + Celery workers, S3-compatible storage, React/TypeScript workspace.</li>
-                                <li>Skills: product ops, user onboarding flows, dataset QA, MLOps roadmap.</li>
-                            </ul>
-                            <a class="btn-link" href="https://od-saas.onrender.com" target="_blank" rel="noopener">Launch VisionFrame</a>
-                        </div>
-                    </article>
-                    <article class="web-card">
-                        <div class="web-card__media" role="presentation"></div>
-                        <div class="web-card__content">
-                            <h4>ESDU 25-Year Anniversary Story</h4>
-                            <p>Full-stack microsite celebrating 25 years of community impact with custom animations, interactive timelines, and tailored narratives for donors and youth.</p>
-                            <a class="btn-link" href="https://esduaub2025.github.io/ESDU_25" target="_blank" rel="noopener">Visit Site</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="experience" aria-labelledby="experience-title">
-            <div class="container">
-                <div class="section-heading">
-                    <span class="eyebrow">Professional Experience</span>
-                    <h2 id="experience-title">AI &amp; Smart Systems Engineer — ESDU, American University of Beirut</h2>
-                </div>
-                <article class="experience-card">
-                    <ul>
-                        <li>Designed and built autonomous robotics systems (EcoStrider hexapod).</li>
-                        <li>Led AI integration for energy management, published in peer-reviewed research.</li>
-                        <li>Developed agricultural AI dashboards and tools used in national and regional events.</li>
-                        <li>Built IoT sensor networks with ESP32, LoRa, solar systems, and MQTT pipelines.</li>
-                        <li>Created multiple production-ready AI applications (RAG bots, dashboards, automation).</li>
-                        <li>Supported ESDU’s AI strategy as a member of the AI integration committee.</li>
-                        <li>Delivered workshops and presentations for students, NGOs, and international events.</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <section class="section" id="skills" aria-labelledby="skills-title">
-            <div class="container">
-                <div class="section-heading">
-                    <span class="eyebrow">Technical Skills</span>
-                    <h2 id="skills-title">Deep specialization across AI, robotics, and embedded systems</h2>
-                </div>
-                <div class="skills-grid">
-                    <div class="skills-group">
-                        <h3>AI / ML</h3>
-                        <p>Deep Learning, CNNs, YOLO, Transformers, RAG, embeddings</p>
-                    </div>
-                    <div class="skills-group">
-                        <h3>Robotics</h3>
-                        <p>ROS 2, SLAM (RTAB-Map), IK, reinforcement learning, servo control</p>
-                    </div>
-                    <div class="skills-group">
-                        <h3>Embedded</h3>
-                        <p>ESP32, LoRa, IMUs, load cells, IoT, MQTT, real-time systems</p>
-                    </div>
-                    <div class="skills-group">
-                        <h3>Software</h3>
-                        <p>Python, C++, JS, Node.js, Flask, FastAPI</p>
-                    </div>
-                    <div class="skills-group">
-                        <h3>Tools</h3>
-                        <p>GitHub, Docker, Streamlit, OpenRouter, Cursor, n8n, Jupyter</p>
-                    </div>
-                    <div class="skills-group">
-                        <h3>Other</h3>
-                        <p>Solar systems, hardware integration, data visualization, dashboards</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="publications" aria-labelledby="publications-title">
-            <div class="container narrow">
-                <div class="section-heading">
-                    <span class="eyebrow">Publications &amp; Talks</span>
-                    <h2 id="publications-title">Thought leadership grounded in real deployments</h2>
-                </div>
-                <ul class="list-highlight">
-                    <li><em>Assessing the Potential of AI Integration for Energy Management in Lebanon</em> — ICECET 2025</li>
-                    <li>Presentation — UNESCO Arab Forum for Cooperation in Science</li>
-                    <li>Presentation — Lebanon National AI Summit 2025</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section section--accent" id="contact" aria-labelledby="contact-title">
-            <div class="container">
-                <div class="contact-card">
-                    <div class="contact-card__intro">
-                        <span class="eyebrow">Contact</span>
-                        <h2 id="contact-title">Let’s build the next generation of intelligent systems</h2>
-                        <p>Whether you need robotics R&amp;D, AI deployment, or full-stack automation, I’ll deliver systems that ship and endure.</p>
-                    </div>
-                    <div class="contact-card__links">
-                        <a class="contact-link" href="mailto:jabernizar98@gmail.com">jabernizar98@gmail.com</a>
-                        <a class="contact-link" href="https://www.linkedin.com/in/nizarshehayeb" target="_blank" rel="noopener">LinkedIn</a>
-                        <a class="contact-link" href="https://github.com/NizarSH98" target="_blank" rel="noopener">GitHub</a>
-                        <a class="contact-link" href="HTMLResume/resume.html" target="_blank" rel="noopener">View CV</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>© <span id="current-year"></span> Nizar Shehayeb. Building intelligent systems for a measurable future.</p>
+        <div class="hero-cta">
+          <a href="#" class="btn btn-primary btn-magnetic">↗ View Resume</a>
+          <a href="https://github.com/NizarSH98" target="_blank" rel="noopener" class="btn btn-secondary btn-magnetic">⟨/⟩ GitHub</a>
         </div>
-    </footer>
+
+        <div class="hero-socials">
+          <a href="https://linkedin.com/in/nizarshehayeb" target="_blank" rel="noopener">LinkedIn <span class="arr">↗</span></a>
+          <a href="https://github.com/NizarSH98" target="_blank" rel="noopener">GitHub <span class="arr">↗</span></a>
+          <a href="/cdn-cgi/l/email-protection#d7bdb6b5b2a5b9beadb6a5eeef97b0bab6bebbf9b4b8ba">Email <span class="arr">→</span></a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-3d" id="hero-3d-canvas" aria-hidden="true">
+          <div class="corner-tag"><span class="bullet"></span>FIG.02 · ACTIVE</div>
+          <div class="axis-tag">X · Y · Z · 18 DOF</div>
+        </div>
+        <div class="hero-marquee" aria-hidden="true">
+          <div class="hero-marquee-track">
+            <span>EcoStrider</span><span>Urban Oasis</span><span>ESDU Brain</span><span>RELEAF</span><span>OpenClaw</span><span>VisionFrame</span><span>SmartTrace</span><span>ESDU 25</span>
+            <span>EcoStrider</span><span>Urban Oasis</span><span>ESDU Brain</span><span>RELEAF</span><span>OpenClaw</span><span>VisionFrame</span><span>SmartTrace</span><span>ESDU 25</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-cue">
+    <span class="line"></span>
+    <span>Scroll · 02 Field Stats</span>
+  </div>
+</section>
+
+<!-- ─────────── 02 — STATS ─────────── -->
+<section class="stats" aria-label="Stats">
+  <div class="stats-inner">
+    <div class="stat">
+      <div class="stat-num"><span data-count="10">0</span><span class="plus">+</span></div>
+      <div class="stat-label">Deployed Systems</div>
+      <div class="stat-key">// production</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num"><span data-count="50000" data-k="1">0</span><span class="plus">+</span></div>
+      <div class="stat-label">Lines of Code</div>
+      <div class="stat-key">// shipped</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num"><span data-count="4">0</span></div>
+      <div class="stat-label">Papers &amp; Talks</div>
+      <div class="stat-key">// 2025</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num"><span data-count="5">0</span><span class="plus">+</span></div>
+      <div class="stat-label">Years Building</div>
+      <div class="stat-key">// since 2021</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── 03 — PROJECTS (sticky horizontal scroll) ─────────── -->
+<section class="projects-section" id="projects">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-num">03</div>
+      <div class="label" style="position: relative; z-index: 1;">Section · Deployed</div>
+      <h2 class="sec-title"><span class="scramble" data-text="DEPLOYED SYSTEMS">DEPLOYED SYSTEMS</span></h2>
+      <div class="sec-sub">production-grade intelligence, shipped to real users</div>
+
+      <div class="projects-progress">
+        <div class="projects-progress-fill"></div>
+        <div class="projects-progress-count">01 / 08</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projects-scroller">
+    <div class="projects-track">
+
+        <!-- P1 — EcoStrider -->
+        <article class="project-card" style="--accent: var(--c-blue);">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=70" alt="" loading="lazy" />
+            <span class="img-tag">FIG · ROBOT ARM REF</span>
+          </div>
+          <div class="project-meta">
+            <div class="project-head">
+              <span class="project-tag"><span class="dot"></span>Robotics · Embedded</span>
+              <span class="project-id">P/01</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">EcoStrider Hexapod</h3>
+              <div class="project-sub">18-DOF autonomous field robot with live digital twin</div>
+              <p class="project-desc">Built from scratch using 18 DS3240 servos, ESP32 main controller, dual ESP32-CAMs for stereo vision, dual PCA9685 servo drivers, and a PyQt6 GUI over WebSocket for teleoperation. A Three.js React digital twin mirrors the physical robot in real time with joint sliders, body pose controls, and tripod gait animation. Seven-phase development roadmap through monocular SLAM (PyCuVSLAM), reinforcement learning, and full goal-based autonomy.</p>
+              <div class="project-impact">7-phase autonomy roadmap · stereo vision · real-time 3D twin</div>
+            </div>
+            <div class="tech">
+              <span class="pill">ESP32</span><span class="pill">ROS 2</span><span class="pill">Inverse Kinematics</span><span class="pill">Three.js</span><span class="pill">PyCuVSLAM</span><span class="pill">WebSocket</span><span class="pill">PyQt6</span><span class="pill">C++</span><span class="pill">Python</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- P2 — Urban Oasis -->
+        <article class="project-card" style="--accent: var(--c-green);">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=1200&q=70" alt="" loading="lazy" />
+            <span class="img-tag">FIG · AERIAL · AUB GARDEN</span>
+          </div>
+          <div class="project-meta">
+            <div class="project-head">
+              <span class="project-tag"><span class="dot"></span>AI · IoT · Live</span>
+              <div class="project-badges">
+                <span class="badge-live"><span class="pulse"></span>Live</span>
+                <span class="badge-red">ICECET 2025</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Urban Oasis Intelligence</h3>
+              <div class="project-sub">Multi-layer AI+IoT system — live at AUB</div>
+              <p class="project-desc">Production system in a real outdoor garden at AUB. Four-layer architecture: agricultural sensors (soil, climate, irrigation), YOLOv5 computer vision cameras for presence and plant monitoring, a central AI reasoning core, and two visitor-facing interactive pedestals. Saves 12.47 kWh/day with 24.25 kg CO₂/day reduction and 11.41% annual ROI. Paper accepted and presented at ICECET 2025.</p>
+              <div class="project-impact">12.47 kWh/day saved · 24.25 kg CO₂/day · 11.41% ROI</div>
+            </div>
+            <div class="tech">
+              <span class="pill">YOLOv5</span><span class="pill">ESP32</span><span class="pill">MQTT</span><span class="pill">IoT Mesh</span><span class="pill">Computer Vision</span><span class="pill">Solar</span><span class="pill">Dashboard</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- P3 — ESDU Brain -->
+        <article class="project-card" style="--accent: var(--c-purple);">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=70" alt="" loading="lazy" />
+            <span class="img-tag">FIG · SERVER ROOM REF</span>
+          </div>
+          <div class="project-meta">
+            <div class="project-head">
+              <span class="project-tag"><span class="dot"></span>LLM · Agentic RAG</span>
+              <span class="project-id">P/03</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">ESDU Brain</h3>
+              <div class="project-sub">Local-first agentic knowledge system over 25+ years of R&amp;D</div>
+              <p class="project-desc">Converts ESDU's institutional knowledge into a conversational intelligence layer. Pipeline: Docling ingestion → BAAI/bge-m3 multilingual embeddings → Qdrant vector DB → SQLite metadata → NetworkX knowledge graph → LlamaIndex orchestration → Chainlit UI. Qwen2.5-72B via OpenRouter handles answers; Claude Opus reserved for entity extraction.</p>
+              <div class="project-impact">25+ years of R&amp;D made conversational · multilingual · graph-augmented</div>
+            </div>
+            <div class="tech">
+              <span class="pill">Docling</span><span class="pill">BAAI/bge-m3</span><span class="pill">Qdrant</span><span class="pill">LlamaIndex</span><span class="pill">Chainlit</span><span class="pill">NetworkX</span><span class="pill">SQLite</span><span class="pill">OpenRouter</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- P4 — RELEAF -->
+        <article class="project-card" style="--accent: var(--c-amber);">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1200&q=70" alt="" loading="lazy" />
+            <span class="img-tag">FIG · LEBANESE FARMS</span>
+          </div>
+          <div class="project-meta">
+            <div class="project-head">
+              <span class="project-tag"><span class="dot"></span>Agritech · AI Platform</span>
+              <div class="project-badges">
+                <span class="badge-live"><span class="pulse"></span>Live</span>
+                <span class="badge-red">UNESCO · LNAS 2025</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">RELEAF Dashboard</h3>
+              <div class="project-sub">Multi-module AI platform for Lebanese sustainable farming</div>
+              <p class="project-desc">Comprehensive AI dashboard for 50+ farms: CNN crop disease detection, yield prediction, market forecasting, RAG chatbot for farmers, live data visualization. Paired with the AI for Sustainable Development online course co-developed with Dr. Nisrine El Turky and Jana Dergham on Karianet.org. Showcased at UNESCO Arab Forum and Lebanon National AI Summit 2025.</p>
+              <div class="project-impact">50+ farms · UNESCO Arab Forum · Lebanon National AI Summit 2025</div>
+            </div>
+            <div class="tech">
+              <span class="pill">Python</span><span class="pill">Streamlit</span><span class="pill">CNN</span><span class="pill">RAG</span><span class="pill">OpenRouter</span><span class="pill">LearnDash</span><span class="pill">Polylang</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- P5 — OpenClaw -->
+        <article class="project-card" style="--accent: var(--c-orange);">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=70" alt="" loading="lazy" />
+            <span class="img-tag">FIG · SRC · 6K LOC</span>
+          </div>
+          <div class="project-meta">
+            <div class="project-head">
+              <span class="project-tag"><span class="dot"></span>Automation · Python</span>
+              <span class="project-id">P/05</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">OpenClaw</h3>
+              <div class="project-sub">~6,000-line social media automation engine</div>
+              <p class="project-desc">Full-stack Python automation for TikTok monetization and SaaS sales. 11-format content playbook (Algorithm Confessional, Translation Layer, Glitch Report as top priorities), a video engine using MoviePy + Pexels API + beat detection via librosa, an LLM creative director layer, and NeMo TTS voiceover. Integrates GitNexus: a static AST-based dependency graph exposed as an MCP server.</p>
+              <div class="project-impact">11 content formats · beat-synced video engine · AST MCP server</div>
+            </div>
+            <div class="tech">
+              <span class="pill">Python</span><span class="pill">MoviePy</span><span class="pill">librosa</span><span class="pill">NeMo TTS</span><span class="pill">Pexels API</span><span class="pill">MCP</span><span class="pill">FastAPI</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- P6 — VisionFrame -->
+        <article class="project-card" style="--accent: var(--c-violet);">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=70" alt="" loading="lazy" />
+            <span class="img-tag">FIG · DATASET PIPELINE</span>
+          </div>
+          <div class="project-meta">
+            <div class="project-head">
+              <span class="project-tag"><span class="dot"></span>SaaS · MLOps</span>
+              <div class="project-badges">
+                <span class="badge-live"><span class="pulse"></span>Live</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <a href="https://od-saas.onrender.com" target="_blank" rel="noopener" class="project-link">Visit ↗</a>
+              <h3 class="project-title">VisionFrame</h3>
+              <div class="project-sub">Video-to-CV-dataset pipeline SaaS</div>
+              <p class="project-desc">Cloud platform enabling non-ML teams to build CV training datasets. Ingests video, slices into frames, and provides a React/TypeScript annotation workspace with bounding-box and label tools. FastAPI + Celery workers backend, S3-compatible storage. Fully deployed and publicly accessible.</p>
+              <div class="project-impact">Production SaaS · annotation workspace · custom CV dataset export</div>
+            </div>
+            <div class="tech">
+              <span class="pill">FastAPI</span><span class="pill">Celery</span><span class="pill">React</span><span class="pill">TypeScript</span><span class="pill">S3</span><span class="pill">Docker</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- P7 — SmartTrace -->
+        <article class="project-card" style="--accent: var(--c-cyan);">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=1200&q=70" alt="" loading="lazy" />
+            <span class="img-tag">FIG · TRACE · QR</span>
+          </div>
+          <div class="project-meta">
+            <div class="project-head">
+              <span class="project-tag"><span class="dot"></span>Web · Supply Chain</span>
+              <div class="project-badges">
+                <span class="badge-live"><span class="pulse"></span>Live</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <a href="https://esduaub2025.github.io/SmartTrace/estimator.html" target="_blank" rel="noopener" class="project-link">Visit ↗</a>
+              <h3 class="project-title">SmartTrace</h3>
+              <div class="project-sub">QR-enabled food traceability PoC for Lebanese producers</div>
+              <p class="project-desc">Provenance verification for small Lebanese farm producers: supply-chain data modeling, on-device QR generation, and a responsive cost estimator for NGO and buyer verification. Deployed on GitHub Pages for ESDU's food systems program — no app install required.</p>
+              <div class="project-impact">Deployed PoC · farm-to-table traceability · ESDU food systems</div>
+            </div>
+            <div class="tech">
+              <span class="pill">Vanilla JS</span><span class="pill">JSON</span><span class="pill">Netlify Functions</span><span class="pill">QR Generation</span><span class="pill">UX Writing</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- P8 — ESDU 25 -->
+        <article class="project-card" style="--accent: var(--c-blue);">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=70" alt="" loading="lazy" />
+            <span class="img-tag">FIG · 25 YEARS · ESDU</span>
+          </div>
+          <div class="project-meta">
+            <div class="project-head">
+              <span class="project-tag"><span class="dot"></span>Web · Institutional</span>
+              <div class="project-badges">
+                <span class="badge-live"><span class="pulse"></span>Live</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <a href="https://esduaub2025.github.io/ESDU_25" target="_blank" rel="noopener" class="project-link">Visit ↗</a>
+              <h3 class="project-title">ESDU 25-Year Microsite</h3>
+              <div class="project-sub">Interactive commemorative site for AUB's ESDU unit</div>
+              <p class="project-desc">Interactive microsite celebrating 25 years of ESDU community impact. Custom scroll animations, an interactive timeline of landmark projects, and multi-audience narrative sections for donors, youth, and academic partners. Standalone GitHub Pages deployment.</p>
+              <div class="project-impact">25-year retrospective · multi-audience storytelling · AUB ESDU</div>
+            </div>
+            <div class="tech">
+              <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">Scroll Animations</span><span class="pill">SVG Timeline</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+</section>
+<section id="bento">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-num">04</div>
+      <div class="label" style="position: relative; z-index: 1;">Section · Capabilities</div>
+      <h2 class="sec-title"><span class="scramble" data-text="CAPABILITIES">CAPABILITIES</span></h2>
+      <div class="sec-sub">deep specialization across AI, robotics, and infrastructure</div>
+    </div>
+
+    <div class="bento reveal-stagger">
+
+      <!-- About — wide -->
+      <div class="tile tile-w7 tile-about" style="--tile-accent: var(--blue);">
+        <div class="bg-image" aria-hidden="true"></div>
+        <div class="content">
+          <div class="tile-label"><span class="dot"></span>About</div>
+          <div class="tile-quote">"I don't <span class="accent">prototype</span> —<br>I deploy."</div>
+          <p class="tile-about-bio">
+            Five years building AI, robotics, and IoT systems at ESDU, AUB. From servo control loops on a 18-DOF hexapod to multilingual RAG over 25 years of institutional R&amp;D — every system I ship has to survive the field, not just the demo.
+          </p>
+        </div>
+        <div class="tile-about-footer">
+          <span>ESDU · AMERICAN UNIVERSITY OF BEIRUT</span>
+          <span>EST. 2021</span>
+        </div>
+      </div>
+
+      <!-- LLM cluster — tall -->
+      <div class="tile tile-w5 tile-llm" style="--tile-accent: var(--c-purple);">
+        <div class="tile-label"><span class="dot"></span>LLM &amp; Agentic AI</div>
+        <div style="font-family: var(--ff-display); font-weight:700; font-size: 26px; text-transform:uppercase; letter-spacing:-0.015em; line-height:1; margin: 4px 0 8px;">10 systems · 1 brain</div>
+        <p style="font-family: var(--ff-mono); font-size:12px; color: var(--ink-2); line-height:1.65; margin: 0 0 14px;">Production agentic RAG over Qdrant, LlamaIndex orchestration, and Claude / Qwen routing via OpenRouter.</p>
+        <div class="pills-grid">
+          <span class="pill">LlamaIndex</span><span class="pill">Qdrant</span><span class="pill">OpenRouter</span><span class="pill">Docling</span><span class="pill">Chainlit</span><span class="pill">Claude API</span><span class="pill">MCP servers</span><span class="pill">RAG</span><span class="pill">BAAI/bge-m3</span><span class="pill">NetworkX</span><span class="pill">Qwen2.5</span><span class="pill">PyTorch</span>
+        </div>
+      </div>
+
+      <!-- Stat: kWh -->
+      <div class="tile tile-w4" style="--tile-accent: var(--c-green);">
+        <div class="tile-label"><span class="dot" style="background: var(--c-green); animation: pulse 1.6s ease-in-out infinite;"></span>Live · Urban Oasis</div>
+        <div class="tile-stat-num"><span data-count="12">0</span>.47<span class="unit">kWh/day saved</span></div>
+        <div class="tile-stat-sub">AUB outdoor garden · live since 2024</div>
+        <div class="tile-stat-detail">→ 24.25 kg CO₂/day reduction · 11.41% annual ROI · ICECET 2025</div>
+      </div>
+
+      <!-- Stat: farms -->
+      <div class="tile tile-w4" style="--tile-accent: var(--c-amber);">
+        <div class="tile-label"><span class="dot"></span>RELEAF · Lebanon</div>
+        <div class="tile-stat-num"><span data-count="50">0</span>+<span class="unit">farms connected</span></div>
+        <div class="tile-stat-sub">Disease detection · yield prediction · RAG chatbot</div>
+        <div class="tile-stat-detail">→ Showcased UNESCO Arab Forum · Lebanon National AI Summit 2025</div>
+      </div>
+
+      <!-- ICECET badge tile -->
+      <div class="tile tile-w4" style="--tile-accent: var(--red);">
+        <div class="tile-label" style="color: var(--red);"><span class="dot" style="background: var(--red);"></span>Peer-reviewed</div>
+        <div class="tile-stat-num" style="color: var(--red);">ICECET</div>
+        <div class="tile-stat-sub" style="color: var(--ink-2);">"Assessing the Potential of AI Integration for Energy Management in Lebanon"</div>
+        <div class="tile-stat-detail">→ International Conference on Electrical, Computer and Energy Technologies · 2025</div>
+      </div>
+
+      <!-- Robotics cluster — wide -->
+      <div class="tile tile-w8 tile-robotics" style="--tile-accent: var(--c-blue);">
+        <div>
+          <div class="tile-label"><span class="dot"></span>Robotics &amp; Control</div>
+          <div style="font-family: var(--ff-display); font-weight:700; font-size: 26px; text-transform:uppercase; letter-spacing:-0.015em; line-height:1; margin: 4px 0 8px;">18 DOF · tripod gait</div>
+          <p style="font-family: var(--ff-mono); font-size:12px; color: var(--ink-2); line-height:1.65; margin: 0 0 12px;">Hexapod inverse kinematics, ROS 2, monocular SLAM, and a live Three.js digital twin synced to physical servos.</p>
+          <div class="pills-grid">
+            <span class="pill">ROS 2</span><span class="pill">SLAM</span><span class="pill">IK</span><span class="pill">Gait Engineering</span><span class="pill">PyCuVSLAM</span><span class="pill">Three.js</span><span class="pill">RTAB-Map</span>
+          </div>
+        </div>
+        <svg class="gait-anim" viewBox="0 0 120 90" aria-hidden="true">
+          <g fill="none" stroke="#1A56DB" stroke-width="1.5" stroke-linecap="round">
+            <line class="g-leg" x1="20" y1="45" x2="10" y2="65" style="animation: gait 1.2s ease-in-out infinite;" />
+            <line class="g-leg" x1="40" y1="45" x2="30" y2="80" style="animation: gait 1.2s 0.2s ease-in-out infinite;" />
+            <line class="g-leg" x1="60" y1="45" x2="55" y2="65" style="animation: gait 1.2s 0.4s ease-in-out infinite;" />
+            <line class="g-leg" x1="80" y1="45" x2="80" y2="80" style="animation: gait 1.2s 0.6s ease-in-out infinite;" />
+            <line class="g-leg" x1="100" y1="45" x2="105" y2="65" style="animation: gait 1.2s 0.8s ease-in-out infinite;" />
+            <line class="g-leg" x1="115" y1="45" x2="115" y2="80" style="animation: gait 1.2s 1.0s ease-in-out infinite;" />
+            <rect x="14" y="36" width="106" height="14" rx="2" stroke="#111827" />
+          </g>
+        </svg>
+      </div>
+
+      <!-- Location -->
+      <div class="tile tile-w4 tile-location">
+        <div class="content">
+          <div class="tile-label"><span class="dot"></span>Location</div>
+          <div class="place-name">Beirut,<br>Lebanon</div>
+          <div class="coords">33.8938° N · 35.5018° E</div>
+        </div>
+      </div>
+
+      <!-- IoT + Software combined -->
+      <div class="tile tile-w8 tile-iot" style="--tile-accent: var(--c-amber);">
+        <div>
+          <div class="tile-label"><span class="dot"></span>Embedded &amp; IoT</div>
+          <div class="sub" style="margin-top: 8px;">Cluster · D</div>
+          <div class="pills-grid" style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px;">
+            <span class="pill">ESP32</span><span class="pill">LoRa</span><span class="pill">MQTT</span><span class="pill">PCA9685</span><span class="pill">Solar</span><span class="pill">IMUs</span><span class="pill">Load cells</span><span class="pill">Sensor mesh</span>
+          </div>
+        </div>
+        <div>
+          <div class="tile-label" style="color: var(--c-violet);"><span class="dot" style="background: var(--c-violet);"></span>Software &amp; Backend</div>
+          <div class="sub" style="margin-top: 8px;">Cluster · E</div>
+          <div class="pills-grid" style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px;">
+            <span class="pill">Python</span><span class="pill">C++</span><span class="pill">JavaScript</span><span class="pill">FastAPI</span><span class="pill">React</span><span class="pill">TypeScript</span><span class="pill">Node.js</span><span class="pill">Celery</span><span class="pill">Docker</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="tile tile-w4" style="--tile-accent: var(--c-cyan);">
+        <div class="tile-label" style="color: var(--c-cyan);"><span class="dot" style="background: var(--c-cyan);"></span>Tools &amp; Infrastructure</div>
+        <div style="font-family: var(--ff-display); font-weight:700; font-size: 22px; text-transform:uppercase; letter-spacing:-0.015em; line-height:1; margin: 4px 0 10px;">Daily Driver</div>
+        <div class="pills-grid" style="display: flex; flex-wrap: wrap; gap: 6px;">
+          <span class="pill">Claude Code</span><span class="pill">GitHub</span><span class="pill">Cursor</span><span class="pill">n8n</span><span class="pill">Jupyter</span><span class="pill">Synology NAS</span><span class="pill">Qdrant Cloud</span><span class="pill">Render</span><span class="pill">WordPress</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes gait {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50%      { transform: translateY(-6px) rotate(-12deg); }
+  }
+</style>
+
+<!-- ─────────── 05 — EXPERIENCE ─────────── -->
+<section class="exp-section" id="exp">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-num">05</div>
+      <div class="label" style="position: relative; z-index: 1;">Section · Record</div>
+      <h2 class="sec-title"><span class="scramble" data-text="FIELD RECORD">FIELD RECORD</span></h2>
+      <div class="sec-sub">five years building intelligent systems for real-world deployment</div>
+    </div>
+
+    <div class="exp-wrap">
+      <div class="exp-line" aria-hidden="true"></div>
+      <div class="exp-date">
+        <div class="chip">2021 — Present</div>
+      </div>
+      <div class="exp-body">
+        <h3 class="exp-role">AI &amp; Smart Systems Engineer</h3>
+        <div class="exp-org"><span class="blue">ESDU</span> — Environment &amp; Sustainable Development Unit · American University of Beirut</div>
+        <ul class="exp-list">
+          <li>Built EcoStrider autonomous hexapod and Urban Oasis AI+IoT system; co-authored peer-reviewed paper at ICECET 2025.</li>
+          <li>Developed <strong>ESDU Brain</strong> — local-first agentic RAG over 25+ years of R&amp;D, unifying institutional knowledge into a conversational interface.</li>
+          <li>Led AI integration committee; proposed $20K integrated R&amp;D pipeline: NVIDIA DGX Spark · UFACTORY Lite 6 · DJI Mavic 3 Multispectral · FarmBot Genesis v1.8 · Synology DS1825+ NAS — mapped to active programs.</li>
+          <li>Co-created and deployed <em>AI for Sustainable Development</em> course on Karianet.org with Dr. Nisrine El Turky and Jana Dergham.</li>
+          <li>Presented at UNESCO Arab Forum for Cooperation in Science 2025 and Lebanon National AI Summit 2025.</li>
+          <li>Built IoT sensor networks, RAG systems, vision dashboards, and automation tools across ESDU programs: DAWWERA, Olive Solidarity Initiative, AREC.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── 06 — PUBLICATIONS ─────────── -->
+<section class="pubs-section" id="pubs">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-num">06</div>
+      <div class="label" style="position: relative; z-index: 1;">Section · Output</div>
+      <h2 class="sec-title"><span class="scramble" data-text="OUTPUT">OUTPUT</span></h2>
+      <div class="sec-sub">papers, courses, and public talks from 2025</div>
+    </div>
+
+    <div class="pub-table">
+      <div class="pub-row">
+        <div><span class="pub-badge paper">Paper</span></div>
+        <div>
+          <h4 class="pub-title">Assessing the Potential of AI Integration for Energy Management in Lebanon</h4>
+          <div class="pub-meta">ICECET 2025 — International Conference on Electrical, Computer and Energy Technologies</div>
+        </div>
+        <div class="pub-year">2025</div>
+      </div>
+
+      <div class="pub-row">
+        <div><span class="pub-badge course">Course</span></div>
+        <div>
+          <h4 class="pub-title">AI for Sustainable Development</h4>
+          <div class="pub-meta">Karianet.org · LearnDash / WordPress · Arab region<br>Co-created with Dr. Nisrine El Turky and Jana Dergham</div>
+        </div>
+        <div class="pub-year">2025</div>
+      </div>
+
+      <div class="pub-row">
+        <div><span class="pub-badge talk">Talk</span></div>
+        <div>
+          <h4 class="pub-title">Smart Urban Oasis AI Deployment</h4>
+          <div class="pub-meta">UNESCO Arab Forum for Cooperation in Science</div>
+        </div>
+        <div class="pub-year">2025</div>
+      </div>
+
+      <div class="pub-row">
+        <div><span class="pub-badge talk">Talk</span></div>
+        <div>
+          <h4 class="pub-title">RELEAF Agricultural AI Platform</h4>
+          <div class="pub-meta">Lebanon National AI Summit 2025</div>
+        </div>
+        <div class="pub-year">2025</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── 07 — CONTACT ─────────── -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-num">07</div>
+      <div class="label" style="position: relative; z-index: 1;">Section · Connect</div>
+      <h2 class="sec-title"><span class="scramble" data-text="CONNECT">CONNECT</span></h2>
+      <div class="sec-sub">open to robotics R&amp;D, AI deployment, and full-stack automation work</div>
+    </div>
+
+    <div class="contact-grid">
+      <h3 class="contact-h">
+        Let's Build Something<br>
+        That <span class="ships">Ships</span>
+      </h3>
+      <p class="contact-text">
+        Robotics R&amp;D · AI deployment · full-stack automation. I design and deliver systems that produce measurable results — measured in kWh saved, farms served, papers shipped, robots walking.
+      </p>
+
+      <div class="contact-card">
+        <a class="contact-row" href="/cdn-cgi/l/email-protection#452f242720372b2c3f24377c7d052228242c296b262a28">
+          <span class="icon">✉</span>
+          <span class="name"><span class="__cf_email__" data-cfemail="4d272c2f283f2324372c3f74750d2a202c2421632e2220">[email&#160;protected]</span></span>
+          <span class="arr">→</span>
+        </a>
+        <a class="contact-row" href="https://linkedin.com/in/nizarshehayeb" target="_blank" rel="noopener">
+          <span class="icon">in</span>
+          <span class="name">linkedin.com/in/nizarshehayeb</span>
+          <span class="arr">↗</span>
+        </a>
+        <a class="contact-row" href="https://github.com/NizarSH98" target="_blank" rel="noopener">
+          <span class="icon">⌥</span>
+          <span class="name">github.com/NizarSH98</span>
+          <span class="arr">↗</span>
+        </a>
+        <a class="contact-row" href="https://nizarsh98.github.io/HTMLResume/resume.html" target="_blank" rel="noopener">
+          <span class="icon">↗</span>
+          <span class="name">nizarsh98.github.io/HTMLResume/resume.html</span>
+          <span class="arr">↗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ─────────── FOOTER ─────────── -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <span class="accent">© 2025 NIZAR SHEHAYEB</span>
+      <span class="dot"></span>
+      Building Intelligent Systems for a Measurable Future
+    </div>
+    <div>
+      <span>BEIRUT</span><span class="dot"></span><span>ESDU</span><span class="dot"></span><span>AUB</span>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/scene3d.js"></script>
+<script src="assets/app.js"></script>
+
+<!-- ── Version Switcher ── -->
+<a href="portfolio-classic.html" class="version-switcher" aria-label="Switch to Classic design">
+  <span class="vs-icon">✦</span>
+  <span class="vs-text">Classic Design</span>
+</a>
+<style>
+  .version-switcher {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 999px;
+    color: #e8e4dc;
+    font-family: "DM Mono", ui-monospace, monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    transition: background 0.2s, border-color 0.2s, transform 0.15s;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+  }
+  .version-switcher:hover {
+    background: rgba(255,255,255,0.15);
+    border-color: rgba(255,255,255,0.35);
+    transform: translateY(-2px);
+  }
+  .vs-icon { font-size: 11px; opacity: 0.7; }
+</style>
+
 </body>
 </html>
